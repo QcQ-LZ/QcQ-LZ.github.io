@@ -3,14 +3,14 @@
   <title>Hexo</title>
   
   
-  <link href="http://quantumlz.gitee.io/quantum1991/atom.xml" rel="self"/>
+  <link href="http://quantum1991.com/atom.xml" rel="self"/>
   
-  <link href="http://quantumlz.gitee.io/quantum1991/"/>
+  <link href="http://quantum1991.com/"/>
   <updated>2020-12-06T13:50:57.326Z</updated>
-  <id>http://quantumlz.gitee.io/quantum1991/</id>
+  <id>http://quantum1991.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Quantum</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>20201206</title>
-    <link href="http://quantumlz.gitee.io/quantum1991/2020/12/06/20201206/"/>
-    <id>http://quantumlz.gitee.io/quantum1991/2020/12/06/20201206/</id>
+    <link href="http://quantum1991.com/2020/12/06/20201206/"/>
+    <id>http://quantum1991.com/2020/12/06/20201206/</id>
     <published>2020-12-06T13:49:53.000Z</published>
     <updated>2020-12-06T13:50:57.326Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://quantumlz.gitee.io/quantum1991/2020/12/05/hello-world/"/>
-    <id>http://quantumlz.gitee.io/quantum1991/2020/12/05/hello-world/</id>
+    <link href="http://quantum1991.com/2020/12/05/hello-world/"/>
+    <id>http://quantum1991.com/2020/12/05/hello-world/</id>
     <published>2020-12-05T13:57:21.446Z</published>
     <updated>2020-12-05T13:57:21.446Z</updated>
     

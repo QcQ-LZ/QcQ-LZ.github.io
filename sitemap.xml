@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://quantumlz.gitee.io/quantum1991/2020/12/06/20201206/</loc>
+    <loc>http://quantum1991.com/CNAME.html</loc>
+    
+    <lastmod>2020-12-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quantum1991.com/2020/12/06/20201206/</loc>
     
     <lastmod>2020-12-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://quantumlz.gitee.io/quantum1991/2020/12/05/hello-world/</loc>
+    <loc>http://quantum1991.com/2020/12/05/hello-world/</loc>
     
     <lastmod>2020-12-05</lastmod>
     
@@ -17,8 +24,8 @@
   
 
   <url>
-    <loc>http://quantumlz.gitee.io/quantum1991</loc>
-    <lastmod>2020-12-07</lastmod>
+    <loc>http://quantum1991.com/</loc>
+    <lastmod>2020-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
