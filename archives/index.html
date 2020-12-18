@@ -1,339 +1,101 @@
-<!DOCTYPE html>
-<html lang="cn">
-  <head>
-    
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.9.0" />
-
-
-
-<link rel="canonical" href="http://quantum1991.com/archives/"/>
-
-
-
-  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css" />
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.9.0" />
-
-
-
-  
-
-
-
-  <script id="baidu_push">
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+<!DOCTYPE html><html lang="cn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><meta name="author" content="Quantum"><meta name="renderer" content="webkit"><meta name="copyright" content="Quantum"><meta name="keywords" content="Hexo"><meta name="description" content=""><meta name="Cache-Control" content="no-cache"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Mr.Long's Blog</title><link rel="stylesheet" href="/css/style.css?v=2018.7.9"><link rel="stylesheet" href="/css/animation.css?v=2018.7.9"><link rel="icon" href="/img/assets/favicon.ico"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6"><!-- scripts--><script>(function( w ){
+  "use strict";
+  // rel=preload support test
+  if( !w.loadCSS ){
+    w.loadCSS = function(){};
+  }
+  // define on the loadCSS obj
+  var rp = loadCSS.relpreload = {};
+  // rel=preload feature support test
+  // runs once and returns a function for compat purposes
+  rp.support = (function(){
+    var ret;
+    try {
+      ret = w.document.createElement( "link" ).relList.supports( "preload" );
+    } catch (e) {
+      ret = false;
     }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    return function(){
+      return ret;
+    };
+  })();
+
+  // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+  // then change that media back to its intended value on load
+  rp.bindMediaToggle = function( link ){
+    // remember existing media attr for ultimate state, or default to 'all'
+    var finalMedia = link.media || "all";
+
+    function enableStylesheet(){
+      link.media = finalMedia;
     }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
+
+    // bind load handlers to enable media
+    if( link.addEventListener ){
+      link.addEventListener( "load", enableStylesheet );
+    } else if( link.attachEvent ){
+      link.attachEvent( "onload", enableStylesheet );
+    }
+
+    // Set rel and non-applicable media type to start an async request
+    // note: timeout allows this to happen async to let rendering continue in IE
+    setTimeout(function(){
+      link.rel = "stylesheet";
+      link.media = "only x";
+    });
+    // also enable media after 3 seconds,
+    // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+    setTimeout( enableStylesheet, 3000 );
+  };
+
+  // loop through link elements in DOM
+  rp.poly = function(){
+    // double check this to prevent external calls from running
+    if( rp.support() ){
+      return;
+    }
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      // qualify links to those with rel=preload and as=style attrs
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+        // prevent rerunning on link
+        link.setAttribute( "data-loadcss", true );
+        // bind listeners to toggle media back
+        rp.bindMediaToggle( link );
+      }
+    }
+  };
+
+  // if unsupported, run the polyfill
+  if( !rp.support() ){
+    // run once at least
+    rp.poly();
+
+    // rerun poly on an interval until onload
+    var run = w.setInterval( rp.poly, 500 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    } else if( w.attachEvent ){
+      w.attachEvent( "onload", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    }
+  }
 
 
-
-
-
-
-
-
-<script>
-  window.config = {"since":2015,"favicon":"/favicon.ico","rss":"default","menu":{"Home":"/"},"color":"Default","toc":true,"fancybox":true,"pjax":true,"copyright":{"enable":true,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":false,"qrCode":{"wechat":null,"alipay":null}},"social":{"email":"your@email.com","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"github":"https://github.com/ahonn","weibo":null,"zhihu":null,"douban":null,"pocket":null,"tumblr":null,"instagram":null},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":null,"google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"version":"2.9.0"};
-</script>
-
-    <title>
-  
-    归档 - Hexo
-  
-</title>
-  <meta name="generator" content="Hexo 5.2.0"></head>
-
-  <body><div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/." class="logo">Hexo</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    
-      <a href="/">
-        <li class="mobile-menu-item">
-          
-          
-            首页
-          
-        </li>
-      </a>
-    
-  </ul>
-</nav>
-
-    <div class="container" id="mobile-panel">
-      <header id="header" class="header"><div class="logo-wrapper">
-  <a href="/." class="logo">Hexo</a>
-</div>
-
-<nav class="site-navbar">
-  
-    <ul id="menu" class="menu">
-      
-        <li class="menu-item">
-          <a class="menu-item-link" href="/">
-            
-            
-              首页
-            
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-
-      </header>
-
-      <main id="main" class="main">
-        <div class="content-wrapper">
-          <div id="content" class="content">
-            
-  
-  <section id="archive" class="archive">
-    
-      
-        <div class="archive-title">
-          <span class="archive-post-counter">
-            目前共计 2 篇日志
-          </span>
-        </div>
-      
-    
-
-    
-      
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year">2020</h2>
-          </div>
-        
-      
-
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            12-06
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2020/12/06/20201206/" class="archive-post-link">
-            20201206
-          </a>
-        </span>
-      </div>
-    
-      
-        
-        
-
-        
-      
-
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            12-05
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2020/12/05/hello-world/" class="archive-post-link">
-            Hello World
-          </a>
-        </span>
-      </div>
-    
-  </section>
-
-  
-  <nav class="pagination">
-    
-    
-  </nav>
-
-
-
-          </div>
-          
-
-        </div>
-      </main>
-
-      <footer id="footer" class="footer">
-
-  <div class="social-links">
-    
-      
-        
-          <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
-        
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        
-          <a target="_blank" rel="noopener" href="https://github.com/ahonn" class="iconfont icon-github" title="github"></a>
-        
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-    
-      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
-    
-  </div>
-
-
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/ahonn/hexo-theme-even">Even</a>
-  </span>
-
-  <span class="copyright-year">
-    
-    &copy; 
-     
-      2015 - 
-    
-    2020
-
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">Quantum</span>
-  </span>
-</div>
-
-      </footer>
-
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
-      </div>
-    </div>
-
-    
-
-
-    
-  
-
-
-
-  
-  
-
-
-
-
-
-  
-    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
-  
-
-  
-    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
-  
-
-  
-    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
-  
-
-  
-    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
-  
-
-  
-    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
-  
-
-
-    <script type="text/javascript" src="/js/src/even.js?v=2.9.0"></script>
-
-  </body>
-</html>
+  // commonjs
+  if( typeof exports !== "undefined" ){
+    exports.loadCSS = loadCSS;
+  }
+  else {
+    w.loadCSS = loadCSS;
+  }
+}( typeof global !== "undefined" ? global : this ) );</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer></script><script src="/js/main.js?v=2018.7.9" defer></script><!-- fancybox--><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script><!-- busuanzi--><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><section class="profile-close" id="cxo-profile"><div class="profile-avatar"><i class="fa fa-caret-left"></i><img src="/img/assets/cat.png"></div><!--.profile-saying
+  i.fa.fa-comment
+  .saying--><div class="cxo-profile-inner"><div class="profile-name">longlongyu</div><div class="profile-signature">for me</div><div class="friends"><div>FRIENDS</div><span><a href="//github.com/Longlongyu" target="_black">friendA</a></span><span><a href="//github.com/" target="_black">friendB</a></span><span><a href="//github.com/" target="_black">friendC</a></span></div><div class="read-progress"></div></div></section><header id="cxo-intro" style="height: 70vh;background-image: url(/img/intro/index-bg.png);"><nav id="cxo-intro-nav"><section><div class="intro-nav-title"><a href="/">Mr.Long's Blog</a></div><div class="intro-nav-label-box"><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a><a href="/tags/">Tags</a></div><i class="fa fa-bars intro-nav-menu"><div class="intro-nav-drop"><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a><a href="/tags/">Tags</a></div></i><div class="clear"></div></section></nav><h1>Mr.Long's Blog</h1><h5>Welcome to my Blog!</h5><div class="intro-social"><a class="fa fa-github" href="//github.com/" target="_blank" title="github"></a><a class="fa fa-weibo" href="//www.weibo.com" target="_blank" title="weibo"></a><a class="fa fa-facebook" href="//www.facebook.com" target="_blank" title="facebook"></a><a class="fa fa-twitter" href="//twitter.com" target="_blank" title="twitter"></a><a class="fa fa-rss" href="/atom.xml" target="_blank" title="rss"></a></div></header><article class="cxo-up" id="cxo-content-outer"><section id="cxo-content-inner"><div id="archive"><div class="article-sort-title">Articles - 2</div><div class="article-sort"><div class="article-sort-item year">2020</div><div class="article-sort-item"><time class="article-sort-item__time">2020-12-06</time><a class="article-sort-item__title" href="/2020/12/06/20201206/" target="_blank">20201206</a></div><div class="article-sort-item"><time class="article-sort-item__time">2020-12-05</time><a class="article-sort-item__title" href="/2020/12/05/hello-world/" target="_blank">Hello World</a></div></div></div><nav class="cxo-page-nav"><span class="page-number current">1</span></nav></section></article><footer id="cxo-footer-outer"><div id="cxo-footer-inner"><p class="footer-container"><span>Site by </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span> | theme </span><a target="_blank" rel="noopener" href="https://github.com/Longlongyu/hexo-theme-Cxo"><span>Cxo</span></a></p><i class="fa fa-user"> </i><span id="busuanzi_value_site_uv"></span><span> | </span><i class="fa fa-eye"> </i><span id="busuanzi_value_site_pv"></span></div></footer><!-- catelog--><!-- top--><i class="fa fa-arrow-up close" id="go-up" aria-hidden="true"></i></body></html>
