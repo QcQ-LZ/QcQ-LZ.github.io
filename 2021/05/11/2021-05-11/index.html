@@ -1,0 +1,5386 @@
+<!DOCTYPE html><html lang="cn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><meta name="author" content="Quantum"><meta name="renderer" content="webkit"><meta name="copyright" content="Quantum"><meta name="keywords" content="Hexo"><meta name="description" content=""><meta name="Cache-Control" content="no-cache"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>2021-05-11基金筛选报告 · FRobot</title><link rel="stylesheet" href="/css/style.css?v=2018.7.9"><link rel="stylesheet" href="/css/animation.css?v=2018.7.9"><link rel="icon" href="/img/assets/favicon.ico"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6"><!-- scripts--><script>(function( w ){
+  "use strict";
+  // rel=preload support test
+  if( !w.loadCSS ){
+    w.loadCSS = function(){};
+  }
+  // define on the loadCSS obj
+  var rp = loadCSS.relpreload = {};
+  // rel=preload feature support test
+  // runs once and returns a function for compat purposes
+  rp.support = (function(){
+    var ret;
+    try {
+      ret = w.document.createElement( "link" ).relList.supports( "preload" );
+    } catch (e) {
+      ret = false;
+    }
+    return function(){
+      return ret;
+    };
+  })();
+
+  // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+  // then change that media back to its intended value on load
+  rp.bindMediaToggle = function( link ){
+    // remember existing media attr for ultimate state, or default to 'all'
+    var finalMedia = link.media || "all";
+
+    function enableStylesheet(){
+      link.media = finalMedia;
+    }
+
+    // bind load handlers to enable media
+    if( link.addEventListener ){
+      link.addEventListener( "load", enableStylesheet );
+    } else if( link.attachEvent ){
+      link.attachEvent( "onload", enableStylesheet );
+    }
+
+    // Set rel and non-applicable media type to start an async request
+    // note: timeout allows this to happen async to let rendering continue in IE
+    setTimeout(function(){
+      link.rel = "stylesheet";
+      link.media = "only x";
+    });
+    // also enable media after 3 seconds,
+    // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+    setTimeout( enableStylesheet, 3000 );
+  };
+
+  // loop through link elements in DOM
+  rp.poly = function(){
+    // double check this to prevent external calls from running
+    if( rp.support() ){
+      return;
+    }
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      // qualify links to those with rel=preload and as=style attrs
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+        // prevent rerunning on link
+        link.setAttribute( "data-loadcss", true );
+        // bind listeners to toggle media back
+        rp.bindMediaToggle( link );
+      }
+    }
+  };
+
+  // if unsupported, run the polyfill
+  if( !rp.support() ){
+    // run once at least
+    rp.poly();
+
+    // rerun poly on an interval until onload
+    var run = w.setInterval( rp.poly, 500 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    } else if( w.attachEvent ){
+      w.attachEvent( "onload", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    }
+  }
+
+
+  // commonjs
+  if( typeof exports !== "undefined" ){
+    exports.loadCSS = loadCSS;
+  }
+  else {
+    w.loadCSS = loadCSS;
+  }
+}( typeof global !== "undefined" ? global : this ) );</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer></script><script src="/js/main.js?v=2018.7.9" defer></script><!-- fancybox--><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script><!-- busuanzi--><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><section class="profile-close" id="cxo-profile"><div class="profile-avatar"><i class="fa fa-caret-left"></i><img src="/img/assets/cat.png"></div><!--.profile-saying
+  i.fa.fa-comment
+  .saying--><div class="cxo-profile-inner"><div class="profile-name">Quantum</div><div class="profile-signature">Stay Hungry, Stay Foolish.</div><div class="friends"><div>FRIENDS</div><span><a href="//space.bilibili.com/360567681" target="_black">B站</a></span></div><div class="read-progress"></div></div></section><header id="cxo-intro" style="height: 70vh;background-image: url(/img/intro/index-bg.png);"><nav id="cxo-intro-nav"><section><div class="intro-nav-title"><a href="/">FRobot 基金小管家 🤖️</a></div><div class="intro-nav-label-box"><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a><a href="/tags/">Tags</a></div><i class="fa fa-bars intro-nav-menu"><div class="intro-nav-drop"><a href="/">Home</a><a href="/about/">About</a><a href="/archives/">Archives</a><a href="/tags/">Tags</a></div></i><div class="clear"></div></section></nav><h1 class="post-title">2021-05-11基金筛选报告</h1><div class="post-intros"><div class="post-intro-meta"><span class="post-intro-time"><i class="post-intro-calendar fa fa-calendar"></i><span>2021-05-11</span></span></div></div></header><article class="cxo-up" id="cxo-content-outer"><section id="cxo-content-inner"><article class="article-entry" id="post"><h1 id="全部类型"><a href="#全部类型" class="headerlink" title="全部类型"></a>全部类型</h1><h2 id="广发多因子混合"><a href="#广发多因子混合" class="headerlink" title="广发多因子混合"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/002943.html">广发多因子混合</a></h2><ul>
+<li><strong>基金类型</strong> ： 混合型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">13.24% (优秀)</td>
+<td align="center">19.85% (优秀)</td>
+<td align="center">61.53% (优秀)</td>
+<td align="center">45.25% (优秀)</td>
+<td align="center">111.60% (优秀)</td>
+<td align="center">176.04% (优秀)</td>
+<td align="center">201.06% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 4                                           </li>
+<li><strong>基金规模</strong> ：  8.52亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_002943.html">唐晓斌</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">003745</td>
+<td align="center">广发多元新兴股票</td>
+<td align="center">股票型</td>
+<td align="center">2020-03-02</td>
+<td align="center">至今</td>
+<td align="center">1年又70天</td>
+<td align="center">23.30%</td>
+<td align="center">31.09%</td>
+<td align="center">894/1392</td>
+</tr>
+<tr>
+<td align="center">002943</td>
+<td align="center">广发多因子混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-06-25</td>
+<td align="center">至今</td>
+<td align="center">2年又321天</td>
+<td align="center">201.76%</td>
+<td align="center">69.68%</td>
+<td align="center">19/2499</td>
+</tr>
+<tr>
+<td align="center">002713</td>
+<td align="center">广发转型升级混合</td>
+<td align="center">混合型</td>
+<td align="center">2017-11-27</td>
+<td align="center">2019-01-10</td>
+<td align="center">1年又44天</td>
+<td align="center">-34.08%</td>
+<td align="center">-12.44%</td>
+<td align="center">2189/2255</td>
+</tr>
+<tr>
+<td align="center">000167</td>
+<td align="center">广发聚优灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2014-12-24</td>
+<td align="center">2018-01-09</td>
+<td align="center">3年又17天</td>
+<td align="center">46.78%</td>
+<td align="center">51.36%</td>
+<td align="center">360/746</td>
+</tr>
+</tbody></table>
+<h2 id="汇丰晋信低碳先锋股票"><a href="#汇丰晋信低碳先锋股票" class="headerlink" title="汇丰晋信低碳先锋股票"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/540008.html">汇丰晋信低碳先锋股票</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">9.29% (优秀)</td>
+<td align="center">2.72% (优秀)</td>
+<td align="center">35.04% (优秀)</td>
+<td align="center">3.42% (优秀)</td>
+<td align="center">115.05% (优秀)</td>
+<td align="center">217.03% (优秀)</td>
+<td align="center">129.57% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 1                                           </li>
+<li><strong>基金规模</strong> ：  64.96亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_540008.html">陆彬</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011578</td>
+<td align="center">汇丰晋信核心成长A</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">011579</td>
+<td align="center">汇丰晋信核心成长C</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">540003</td>
+<td align="center">汇丰晋信动态策略混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-05-09</td>
+<td align="center">至今</td>
+<td align="center">1年又2天</td>
+<td align="center">87.35%</td>
+<td align="center">32.91%</td>
+<td align="center">35/3263</td>
+</tr>
+<tr>
+<td align="center">540008</td>
+<td align="center">汇丰晋信低碳先锋股票</td>
+<td align="center">股票型</td>
+<td align="center">2019-08-17</td>
+<td align="center">至今</td>
+<td align="center">1年又268天</td>
+<td align="center">212.80%</td>
+<td align="center">54.90%</td>
+<td align="center">2/1183</td>
+</tr>
+<tr>
+<td align="center">001643</td>
+<td align="center">汇丰晋信智造先锋股票A</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">252.35%</td>
+<td align="center">66.44%</td>
+<td align="center">1/1113</td>
+</tr>
+<tr>
+<td align="center">001644</td>
+<td align="center">汇丰晋信智造先锋股票C</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">249.10%</td>
+<td align="center">66.44%</td>
+<td align="center">2/1113</td>
+</tr>
+</tbody></table>
+<h2 id="华夏能源革新股票"><a href="#华夏能源革新股票" class="headerlink" title="华夏能源革新股票"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/003834.html">华夏能源革新股票</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">11.31% (优秀)</td>
+<td align="center">-5.46% (良好)</td>
+<td align="center">34.72% (优秀)</td>
+<td align="center">1.92% (良好)</td>
+<td align="center">123.44% (优秀)</td>
+<td align="center">186.38% (优秀)</td>
+<td align="center">161.63% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  162.79亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_003834.html">郑泽鸿</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">519029</td>
+<td align="center">华夏稳增混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-14</td>
+<td align="center">2020-06-12</td>
+<td align="center">1年又150天</td>
+<td align="center">74.92%</td>
+<td align="center">47.20%</td>
+<td align="center">569/2763</td>
+</tr>
+<tr>
+<td align="center">002345</td>
+<td align="center">华夏高端制造混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-08-31</td>
+<td align="center">2020-06-12</td>
+<td align="center">1年又286天</td>
+<td align="center">38.75%</td>
+<td align="center">37.10%</td>
+<td align="center">1135/2742</td>
+</tr>
+<tr>
+<td align="center">003834</td>
+<td align="center">华夏能源革新股票</td>
+<td align="center">股票型</td>
+<td align="center">2017-06-07</td>
+<td align="center">至今</td>
+<td align="center">3年又339天</td>
+<td align="center">175.50%</td>
+<td align="center">67.75%</td>
+<td align="center">37/684</td>
+</tr>
+</tbody></table>
+<h1 id="QDII"><a href="#QDII" class="headerlink" title="QDII"></a>QDII</h1><h2 id="南方香港优选股票"><a href="#南方香港优选股票" class="headerlink" title="南方香港优选股票"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/160125.html">南方香港优选股票</a></h2><ul>
+<li><strong>基金类型</strong> ： QDII  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-1.17% (一般)</td>
+<td align="center">10.61% (优秀)</td>
+<td align="center">22.33% (优秀)</td>
+<td align="center">21.55% (优秀)</td>
+<td align="center">53.66% (优秀)</td>
+<td align="center">60.47% (优秀)</td>
+<td align="center">60.18% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  4.49亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中低</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_160125.html">毕凯</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">007109</td>
+<td align="center">南方沪港深核心优势混合</td>
+<td align="center">混合型</td>
+<td align="center">2020-12-25</td>
+<td align="center">至今</td>
+<td align="center">137天</td>
+<td align="center">12.51%</td>
+<td align="center">1.37%</td>
+<td align="center">122/4191</td>
+</tr>
+<tr>
+<td align="center">001979</td>
+<td align="center">南方沪港深价值</td>
+<td align="center">混合型</td>
+<td align="center">2018-06-08</td>
+<td align="center">2021-03-05</td>
+<td align="center">2年又271天</td>
+<td align="center">21.32%</td>
+<td align="center">63.30%</td>
+<td align="center">2288/2590</td>
+</tr>
+<tr>
+<td align="center">160125</td>
+<td align="center">南方香港优选股票</td>
+<td align="center">QDII</td>
+<td align="center">2017-08-24</td>
+<td align="center">至今</td>
+<td align="center">3年又261天</td>
+<td align="center">76.82%</td>
+<td align="center">38.42%</td>
+<td align="center">30/171</td>
+</tr>
+<tr>
+<td align="center">160138</td>
+<td align="center">南方恒生中国企业精明指数A</td>
+<td align="center">QDII-指数</td>
+<td align="center">2017-08-24</td>
+<td align="center">2019-04-23</td>
+<td align="center">1年又242天</td>
+<td align="center">8.92%</td>
+<td align="center">9.09%</td>
+<td align="center">44/125</td>
+</tr>
+<tr>
+<td align="center">160139</td>
+<td align="center">南方恒生中国企业精明指数C</td>
+<td align="center">QDII-指数</td>
+<td align="center">2017-08-24</td>
+<td align="center">2019-04-23</td>
+<td align="center">1年又242天</td>
+<td align="center">8.20%</td>
+<td align="center">9.09%</td>
+<td align="center">49/125</td>
+</tr>
+</tbody></table>
+<h2 id="南方香港成长"><a href="#南方香港成长" class="headerlink" title="南方香港成长"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001691.html">南方香港成长</a></h2><ul>
+<li><strong>基金类型</strong> ： QDII  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-3.08% (不佳)</td>
+<td align="center">-10.57% (不佳)</td>
+<td align="center">21.56% (优秀)</td>
+<td align="center">7.54% (优秀)</td>
+<td align="center">81.03% (优秀)</td>
+<td align="center">152.11% (优秀)</td>
+<td align="center">142.39% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  35.43亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001691.html">黄亮等</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">007109</td>
+<td align="center">南方沪港深核心优势混合</td>
+<td align="center">混合型</td>
+<td align="center">2020-12-25</td>
+<td align="center">至今</td>
+<td align="center">137天</td>
+<td align="center">12.51%</td>
+<td align="center">1.37%</td>
+<td align="center">122/4191</td>
+</tr>
+<tr>
+<td align="center">001691</td>
+<td align="center">南方香港成长(QDII)</td>
+<td align="center">QDII</td>
+<td align="center">2019-04-03</td>
+<td align="center">至今</td>
+<td align="center">2年又39天</td>
+<td align="center">140.73%</td>
+<td align="center">28.74%</td>
+<td align="center">1/229</td>
+</tr>
+<tr>
+<td align="center">006476</td>
+<td align="center">南方原油C</td>
+<td align="center">QDII</td>
+<td align="center">2018-10-08</td>
+<td align="center">至今</td>
+<td align="center">2年又216天</td>
+<td align="center">-45.87%</td>
+<td align="center">31.24%</td>
+<td align="center">195/198</td>
+</tr>
+<tr>
+<td align="center">160140</td>
+<td align="center">南方道琼斯美国精选A</td>
+<td align="center">QDII-指数</td>
+<td align="center">2017-10-26</td>
+<td align="center">至今</td>
+<td align="center">3年又198天</td>
+<td align="center">13.29%</td>
+<td align="center">32.72%</td>
+<td align="center">103/178</td>
+</tr>
+<tr>
+<td align="center">160141</td>
+<td align="center">南方道琼斯美国精选C</td>
+<td align="center">QDII-指数</td>
+<td align="center">2017-10-26</td>
+<td align="center">至今</td>
+<td align="center">3年又198天</td>
+<td align="center">11.74%</td>
+<td align="center">32.72%</td>
+<td align="center">105/178</td>
+</tr>
+<tr>
+<td align="center">160138</td>
+<td align="center">南方恒生中国企业精明指数A</td>
+<td align="center">QDII-指数</td>
+<td align="center">2017-04-26</td>
+<td align="center">2019-04-23</td>
+<td align="center">1年又362天</td>
+<td align="center">13.55%</td>
+<td align="center">11.93%</td>
+<td align="center">47/119</td>
+</tr>
+<tr>
+<td align="center">160139</td>
+<td align="center">南方恒生中国企业精明指数C</td>
+<td align="center">QDII-指数</td>
+<td align="center">2017-04-26</td>
+<td align="center">2019-04-23</td>
+<td align="center">1年又362天</td>
+<td align="center">12.67%</td>
+<td align="center">11.93%</td>
+<td align="center">52/119</td>
+</tr>
+<tr>
+<td align="center">501018</td>
+<td align="center">南方原油A</td>
+<td align="center">QDII</td>
+<td align="center">2016-06-15</td>
+<td align="center">至今</td>
+<td align="center">4年又331天</td>
+<td align="center">-23.61%</td>
+<td align="center">70.29%</td>
+<td align="center">120/123</td>
+</tr>
+<tr>
+<td align="center">160125</td>
+<td align="center">南方香港优选股票</td>
+<td align="center">QDII</td>
+<td align="center">2011-09-26</td>
+<td align="center">2017-11-09</td>
+<td align="center">6年又46天</td>
+<td align="center">12.33%</td>
+<td align="center">54.03%</td>
+<td align="center">33/42</td>
+</tr>
+<tr>
+<td align="center">202801</td>
+<td align="center">南方全球精选配置</td>
+<td align="center">QDII</td>
+<td align="center">2009-06-27</td>
+<td align="center">至今</td>
+<td align="center">11年又321天</td>
+<td align="center">105.68%</td>
+<td align="center">125.99%</td>
+<td align="center">5/9</td>
+</tr>
+</tbody></table>
+<h2 id="国富亚洲机会股票"><a href="#国富亚洲机会股票" class="headerlink" title="国富亚洲机会股票"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/457001.html">国富亚洲机会股票</a></h2><ul>
+<li><strong>基金类型</strong> ： QDII  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-2.24% (不佳)</td>
+<td align="center">-7.03% (一般)</td>
+<td align="center">15.05% (优秀)</td>
+<td align="center">6.16% (良好)</td>
+<td align="center">57.64% (优秀)</td>
+<td align="center">88.16% (优秀)</td>
+<td align="center">81.78% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  8.43亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_457001.html">徐成</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">009846</td>
+<td align="center">国富港股通远见价值混合</td>
+<td align="center">混合型</td>
+<td align="center">2020-08-18</td>
+<td align="center">至今</td>
+<td align="center">266天</td>
+<td align="center">13.71%</td>
+<td align="center">7.77%</td>
+<td align="center">809/3554</td>
+</tr>
+<tr>
+<td align="center">006370</td>
+<td align="center">国富大中华精选混合美元</td>
+<td align="center">QDII</td>
+<td align="center">2019-04-15</td>
+<td align="center">至今</td>
+<td align="center">2年又27天</td>
+<td align="center">101.25%</td>
+<td align="center">28.98%</td>
+<td align="center">14/232</td>
+</tr>
+<tr>
+<td align="center">006373</td>
+<td align="center">国富全球科技互联混合人民币</td>
+<td align="center">QDII</td>
+<td align="center">2018-11-20</td>
+<td align="center">至今</td>
+<td align="center">2年又173天</td>
+<td align="center">129.21%</td>
+<td align="center">40.87%</td>
+<td align="center">13/212</td>
+</tr>
+<tr>
+<td align="center">006374</td>
+<td align="center">国富全球科技互联混合美元现汇</td>
+<td align="center">QDII</td>
+<td align="center">2018-11-20</td>
+<td align="center">至今</td>
+<td align="center">2年又173天</td>
+<td align="center">144.04%</td>
+<td align="center">40.87%</td>
+<td align="center">9/212</td>
+</tr>
+<tr>
+<td align="center">006039</td>
+<td align="center">国富估值优势混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-08-22</td>
+<td align="center">至今</td>
+<td align="center">2年又263天</td>
+<td align="center">153.85%</td>
+<td align="center">78.30%</td>
+<td align="center">206/2555</td>
+</tr>
+<tr>
+<td align="center">001605</td>
+<td align="center">国富沪港深成长精选股票</td>
+<td align="center">股票型</td>
+<td align="center">2017-07-08</td>
+<td align="center">至今</td>
+<td align="center">3年又308天</td>
+<td align="center">192.94%</td>
+<td align="center">61.60%</td>
+<td align="center">17/700</td>
+</tr>
+<tr>
+<td align="center">003972</td>
+<td align="center">国富美元债定开债人民币</td>
+<td align="center">QDII</td>
+<td align="center">2017-01-25</td>
+<td align="center">至今</td>
+<td align="center">4年又107天</td>
+<td align="center">8.12%</td>
+<td align="center">55.68%</td>
+<td align="center">128/151</td>
+</tr>
+<tr>
+<td align="center">003973</td>
+<td align="center">国富美元债定开债美元现汇</td>
+<td align="center">QDII</td>
+<td align="center">2017-01-25</td>
+<td align="center">至今</td>
+<td align="center">4年又107天</td>
+<td align="center">14.62%</td>
+<td align="center">55.68%</td>
+<td align="center">112/151</td>
+</tr>
+<tr>
+<td align="center">000934</td>
+<td align="center">国富大中华精选混合</td>
+<td align="center">QDII</td>
+<td align="center">2015-12-24</td>
+<td align="center">至今</td>
+<td align="center">5年又140天</td>
+<td align="center">205.76%</td>
+<td align="center">67.43%</td>
+<td align="center">1/94</td>
+</tr>
+<tr>
+<td align="center">457001</td>
+<td align="center">国富亚洲机会股票(QDII)</td>
+<td align="center">QDII</td>
+<td align="center">2015-12-24</td>
+<td align="center">至今</td>
+<td align="center">5年又140天</td>
+<td align="center">138.15%</td>
+<td align="center">67.43%</td>
+<td align="center">14/94</td>
+</tr>
+</tbody></table>
+<h1 id="混合型"><a href="#混合型" class="headerlink" title="混合型"></a>混合型</h1><h2 id="广发多因子混合-1"><a href="#广发多因子混合-1" class="headerlink" title="广发多因子混合"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/002943.html">广发多因子混合</a></h2><ul>
+<li><strong>基金类型</strong> ： 混合型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">13.24% (优秀)</td>
+<td align="center">19.85% (优秀)</td>
+<td align="center">61.53% (优秀)</td>
+<td align="center">45.25% (优秀)</td>
+<td align="center">111.60% (优秀)</td>
+<td align="center">176.04% (优秀)</td>
+<td align="center">201.06% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 4                                           </li>
+<li><strong>基金规模</strong> ：  8.52亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_002943.html">唐晓斌</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">003745</td>
+<td align="center">广发多元新兴股票</td>
+<td align="center">股票型</td>
+<td align="center">2020-03-02</td>
+<td align="center">至今</td>
+<td align="center">1年又70天</td>
+<td align="center">23.30%</td>
+<td align="center">31.09%</td>
+<td align="center">894/1392</td>
+</tr>
+<tr>
+<td align="center">002943</td>
+<td align="center">广发多因子混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-06-25</td>
+<td align="center">至今</td>
+<td align="center">2年又321天</td>
+<td align="center">201.76%</td>
+<td align="center">69.68%</td>
+<td align="center">19/2499</td>
+</tr>
+<tr>
+<td align="center">002713</td>
+<td align="center">广发转型升级混合</td>
+<td align="center">混合型</td>
+<td align="center">2017-11-27</td>
+<td align="center">2019-01-10</td>
+<td align="center">1年又44天</td>
+<td align="center">-34.08%</td>
+<td align="center">-12.44%</td>
+<td align="center">2189/2255</td>
+</tr>
+<tr>
+<td align="center">000167</td>
+<td align="center">广发聚优灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2014-12-24</td>
+<td align="center">2018-01-09</td>
+<td align="center">3年又17天</td>
+<td align="center">46.78%</td>
+<td align="center">51.36%</td>
+<td align="center">360/746</td>
+</tr>
+</tbody></table>
+<h2 id="大成睿景灵活配置混合A"><a href="#大成睿景灵活配置混合A" class="headerlink" title="大成睿景灵活配置混合A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001300.html">大成睿景灵活配置混合A</a></h2><ul>
+<li><strong>基金类型</strong> ： 混合型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">3.13% (优秀)</td>
+<td align="center">-1.36% (优秀)</td>
+<td align="center">29.19% (优秀)</td>
+<td align="center">20.94% (优秀)</td>
+<td align="center">108.36% (优秀)</td>
+<td align="center">161.86% (优秀)</td>
+<td align="center">130.08% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 2                                           </li>
+<li><strong>基金规模</strong> ：  10.50亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001300.html">韩创</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">010826</td>
+<td align="center">大成产业趋势混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-02-09</td>
+<td align="center">至今</td>
+<td align="center">91天</td>
+<td align="center">-3.76%</td>
+<td align="center">-7.35%</td>
+<td align="center">1528/4191</td>
+</tr>
+<tr>
+<td align="center">010827</td>
+<td align="center">大成产业趋势混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-02-09</td>
+<td align="center">至今</td>
+<td align="center">91天</td>
+<td align="center">-3.95%</td>
+<td align="center">-7.35%</td>
+<td align="center">1556/4191</td>
+</tr>
+<tr>
+<td align="center">002258</td>
+<td align="center">大成国企改革灵活配置混合</td>
+<td align="center">混合型</td>
+<td align="center">2021-01-13</td>
+<td align="center">至今</td>
+<td align="center">118天</td>
+<td align="center">9.38%</td>
+<td align="center">-4.32%</td>
+<td align="center">66/4060</td>
+</tr>
+<tr>
+<td align="center">001300</td>
+<td align="center">大成睿景灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-01-02</td>
+<td align="center">至今</td>
+<td align="center">1年又130天</td>
+<td align="center">112.17%</td>
+<td align="center">41.16%</td>
+<td align="center">23/3062</td>
+</tr>
+<tr>
+<td align="center">001301</td>
+<td align="center">大成睿景灵活配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-01-02</td>
+<td align="center">至今</td>
+<td align="center">1年又130天</td>
+<td align="center">109.99%</td>
+<td align="center">41.16%</td>
+<td align="center">33/3062</td>
+</tr>
+<tr>
+<td align="center">090016</td>
+<td align="center">大成消费主题混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-10</td>
+<td align="center">2020-02-03</td>
+<td align="center">1年又24天</td>
+<td align="center">38.68%</td>
+<td align="center">27.30%</td>
+<td align="center">735/2756</td>
+</tr>
+<tr>
+<td align="center">090018</td>
+<td align="center">大成新锐产业混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-10</td>
+<td align="center">至今</td>
+<td align="center">2年又122天</td>
+<td align="center">225.68%</td>
+<td align="center">90.53%</td>
+<td align="center">48/2679</td>
+</tr>
+</tbody></table>
+<h2 id="金鹰改革红利混合"><a href="#金鹰改革红利混合" class="headerlink" title="金鹰改革红利混合"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001951.html">金鹰改革红利混合</a></h2><ul>
+<li><strong>基金类型</strong> ： 混合型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">11.18% (优秀)</td>
+<td align="center">-7.95% (良好)</td>
+<td align="center">37.70% (优秀)</td>
+<td align="center">15.23% (优秀)</td>
+<td align="center">104.93% (优秀)</td>
+<td align="center">151.49% (优秀)</td>
+<td align="center">134.94% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 3                                           </li>
+<li><strong>基金规模</strong> ：  16.28亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001951.html">倪超等</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011155</td>
+<td align="center">金鹰责任投资混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-03-16</td>
+<td align="center">至今</td>
+<td align="center">56天</td>
+<td align="center">0.55%</td>
+<td align="center">2.34%</td>
+<td align="center">2752/4334</td>
+</tr>
+<tr>
+<td align="center">011156</td>
+<td align="center">金鹰责任投资混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-03-16</td>
+<td align="center">至今</td>
+<td align="center">56天</td>
+<td align="center">0.40%</td>
+<td align="center">2.34%</td>
+<td align="center">2920/4334</td>
+</tr>
+<tr>
+<td align="center">003502</td>
+<td align="center">金鹰鑫瑞混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-09-25</td>
+<td align="center">至今</td>
+<td align="center">228天</td>
+<td align="center">8.95%</td>
+<td align="center">11.25%</td>
+<td align="center">2005/3901</td>
+</tr>
+<tr>
+<td align="center">003503</td>
+<td align="center">金鹰鑫瑞混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-09-25</td>
+<td align="center">至今</td>
+<td align="center">228天</td>
+<td align="center">8.88%</td>
+<td align="center">11.25%</td>
+<td align="center">2018/3901</td>
+</tr>
+<tr>
+<td align="center">002681</td>
+<td align="center">金鹰元和灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-06-20</td>
+<td align="center">至今</td>
+<td align="center">325天</td>
+<td align="center">50.63%</td>
+<td align="center">24.45%</td>
+<td align="center">215/3404</td>
+</tr>
+<tr>
+<td align="center">002682</td>
+<td align="center">金鹰元和灵活配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-06-20</td>
+<td align="center">至今</td>
+<td align="center">325天</td>
+<td align="center">49.85%</td>
+<td align="center">24.45%</td>
+<td align="center">226/3404</td>
+</tr>
+<tr>
+<td align="center">001951</td>
+<td align="center">金鹰改革红利混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-04-13</td>
+<td align="center">至今</td>
+<td align="center">2年又29天</td>
+<td align="center">135.59%</td>
+<td align="center">60.53%</td>
+<td align="center">125/2775</td>
+</tr>
+<tr>
+<td align="center">210001</td>
+<td align="center">金鹰成份优选混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-04-13</td>
+<td align="center">至今</td>
+<td align="center">2年又29天</td>
+<td align="center">51.36%</td>
+<td align="center">60.53%</td>
+<td align="center">1407/2775</td>
+</tr>
+<tr>
+<td align="center">004265</td>
+<td align="center">金鹰民丰回报定期开放混合</td>
+<td align="center">混合型</td>
+<td align="center">2017-06-28</td>
+<td align="center">2018-07-11</td>
+<td align="center">1年又13天</td>
+<td align="center">3.75%</td>
+<td align="center">0.61%</td>
+<td align="center">764/2242</td>
+</tr>
+<tr>
+<td align="center">002490</td>
+<td align="center">金鹰元祺信用债</td>
+<td align="center">债券型</td>
+<td align="center">2016-04-06</td>
+<td align="center">2018-01-27</td>
+<td align="center">1年又296天</td>
+<td align="center">6.50%</td>
+<td align="center">2.91%</td>
+<td align="center">97/650</td>
+</tr>
+<tr>
+<td align="center">002425</td>
+<td align="center">金鹰元禧混合C</td>
+<td align="center">混合型</td>
+<td align="center">2016-03-07</td>
+<td align="center">2018-03-20</td>
+<td align="center">2年又13天</td>
+<td align="center">62.14%</td>
+<td align="center">21.26%</td>
+<td align="center">58/1387</td>
+</tr>
+<tr>
+<td align="center">210006</td>
+<td align="center">金鹰元禧混合A</td>
+<td align="center">混合型</td>
+<td align="center">2015-08-13</td>
+<td align="center">2018-03-20</td>
+<td align="center">2年又220天</td>
+<td align="center">3.29%</td>
+<td align="center">5.53%</td>
+<td align="center">620/1095</td>
+</tr>
+<tr>
+<td align="center">210003</td>
+<td align="center">金鹰行业优势混合</td>
+<td align="center">混合型</td>
+<td align="center">2015-06-11</td>
+<td align="center">至今</td>
+<td align="center">5年又336天</td>
+<td align="center">68.69%</td>
+<td align="center">39.10%</td>
+<td align="center">184/938</td>
+</tr>
+</tbody></table>
+<h2 id="信诚新兴产业混合"><a href="#信诚新兴产业混合" class="headerlink" title="信诚新兴产业混合"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/000209.html">信诚新兴产业混合</a></h2><ul>
+<li><strong>基金类型</strong> ： 混合型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">12.18% (优秀)</td>
+<td align="center">-3.89% (良好)</td>
+<td align="center">34.47% (优秀)</td>
+<td align="center">6.67% (优秀)</td>
+<td align="center">105.46% (优秀)</td>
+<td align="center">175.29% (优秀)</td>
+<td align="center">122.98% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 1                                           </li>
+<li><strong>基金规模</strong> ：  4.11亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_000209.html">王睿等</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">550015</td>
+<td align="center">信诚至远A</td>
+<td align="center">混合型</td>
+<td align="center">2019-10-25</td>
+<td align="center">至今</td>
+<td align="center">1年又199天</td>
+<td align="center">132.10%</td>
+<td align="center">51.67%</td>
+<td align="center">34/3054</td>
+</tr>
+<tr>
+<td align="center">550016</td>
+<td align="center">信诚至远C</td>
+<td align="center">混合型</td>
+<td align="center">2019-10-25</td>
+<td align="center">至今</td>
+<td align="center">1年又199天</td>
+<td align="center">130.87%</td>
+<td align="center">51.67%</td>
+<td align="center">37/3054</td>
+</tr>
+<tr>
+<td align="center">000209</td>
+<td align="center">信诚新兴产业混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-08-28</td>
+<td align="center">至今</td>
+<td align="center">1年又257天</td>
+<td align="center">148.47%</td>
+<td align="center">55.88%</td>
+<td align="center">18/2935</td>
+</tr>
+<tr>
+<td align="center">006392</td>
+<td align="center">中信保诚创新成长混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-30</td>
+<td align="center">至今</td>
+<td align="center">2年又102天</td>
+<td align="center">170.06%</td>
+<td align="center">87.73%</td>
+<td align="center">247/2695</td>
+</tr>
+<tr>
+<td align="center">550002</td>
+<td align="center">中信保诚精萃成长混合</td>
+<td align="center">混合型</td>
+<td align="center">2015-05-29</td>
+<td align="center">至今</td>
+<td align="center">5年又349天</td>
+<td align="center">71.40%</td>
+<td align="center">48.26%</td>
+<td align="center">237/955</td>
+</tr>
+<tr>
+<td align="center">550008</td>
+<td align="center">信诚优胜精选混合</td>
+<td align="center">混合型</td>
+<td align="center">2015-04-30</td>
+<td align="center">至今</td>
+<td align="center">6年又13天</td>
+<td align="center">89.42%</td>
+<td align="center">69.74%</td>
+<td align="center">261/873</td>
+</tr>
+</tbody></table>
+<h2 id="大成新锐产业混合"><a href="#大成新锐产业混合" class="headerlink" title="大成新锐产业混合"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/090018.html">大成新锐产业混合</a></h2><ul>
+<li><strong>基金类型</strong> ： 混合型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">3.01% (优秀)</td>
+<td align="center">-0.34% (优秀)</td>
+<td align="center">32.74% (优秀)</td>
+<td align="center">23.39% (优秀)</td>
+<td align="center">117.70% (优秀)</td>
+<td align="center">174.98% (优秀)</td>
+<td align="center">157.04% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 5                                           </li>
+<li><strong>基金规模</strong> ：  21.78亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_090018.html">韩创</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">010826</td>
+<td align="center">大成产业趋势混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-02-09</td>
+<td align="center">至今</td>
+<td align="center">91天</td>
+<td align="center">-3.76%</td>
+<td align="center">-7.35%</td>
+<td align="center">1528/4191</td>
+</tr>
+<tr>
+<td align="center">010827</td>
+<td align="center">大成产业趋势混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-02-09</td>
+<td align="center">至今</td>
+<td align="center">91天</td>
+<td align="center">-3.95%</td>
+<td align="center">-7.35%</td>
+<td align="center">1556/4191</td>
+</tr>
+<tr>
+<td align="center">002258</td>
+<td align="center">大成国企改革灵活配置混合</td>
+<td align="center">混合型</td>
+<td align="center">2021-01-13</td>
+<td align="center">至今</td>
+<td align="center">118天</td>
+<td align="center">9.38%</td>
+<td align="center">-4.32%</td>
+<td align="center">66/4060</td>
+</tr>
+<tr>
+<td align="center">001300</td>
+<td align="center">大成睿景灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-01-02</td>
+<td align="center">至今</td>
+<td align="center">1年又130天</td>
+<td align="center">112.17%</td>
+<td align="center">41.16%</td>
+<td align="center">23/3062</td>
+</tr>
+<tr>
+<td align="center">001301</td>
+<td align="center">大成睿景灵活配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-01-02</td>
+<td align="center">至今</td>
+<td align="center">1年又130天</td>
+<td align="center">109.99%</td>
+<td align="center">41.16%</td>
+<td align="center">33/3062</td>
+</tr>
+<tr>
+<td align="center">090016</td>
+<td align="center">大成消费主题混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-10</td>
+<td align="center">2020-02-03</td>
+<td align="center">1年又24天</td>
+<td align="center">38.68%</td>
+<td align="center">27.30%</td>
+<td align="center">735/2756</td>
+</tr>
+<tr>
+<td align="center">090018</td>
+<td align="center">大成新锐产业混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-10</td>
+<td align="center">至今</td>
+<td align="center">2年又122天</td>
+<td align="center">225.68%</td>
+<td align="center">90.53%</td>
+<td align="center">48/2679</td>
+</tr>
+</tbody></table>
+<h1 id="股票型"><a href="#股票型" class="headerlink" title="股票型"></a>股票型</h1><h2 id="华夏能源革新股票-1"><a href="#华夏能源革新股票-1" class="headerlink" title="华夏能源革新股票"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/003834.html">华夏能源革新股票</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">11.31% (优秀)</td>
+<td align="center">-5.46% (良好)</td>
+<td align="center">34.72% (优秀)</td>
+<td align="center">1.92% (良好)</td>
+<td align="center">123.44% (优秀)</td>
+<td align="center">186.38% (优秀)</td>
+<td align="center">161.63% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  162.79亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_003834.html">郑泽鸿</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">519029</td>
+<td align="center">华夏稳增混合</td>
+<td align="center">混合型</td>
+<td align="center">2019-01-14</td>
+<td align="center">2020-06-12</td>
+<td align="center">1年又150天</td>
+<td align="center">74.92%</td>
+<td align="center">47.20%</td>
+<td align="center">569/2763</td>
+</tr>
+<tr>
+<td align="center">002345</td>
+<td align="center">华夏高端制造混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-08-31</td>
+<td align="center">2020-06-12</td>
+<td align="center">1年又286天</td>
+<td align="center">38.75%</td>
+<td align="center">37.10%</td>
+<td align="center">1135/2742</td>
+</tr>
+<tr>
+<td align="center">003834</td>
+<td align="center">华夏能源革新股票</td>
+<td align="center">股票型</td>
+<td align="center">2017-06-07</td>
+<td align="center">至今</td>
+<td align="center">3年又339天</td>
+<td align="center">175.50%</td>
+<td align="center">67.75%</td>
+<td align="center">37/684</td>
+</tr>
+</tbody></table>
+<h2 id="汇丰晋信智造先锋股票C"><a href="#汇丰晋信智造先锋股票C" class="headerlink" title="汇丰晋信智造先锋股票C"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001644.html">汇丰晋信智造先锋股票C</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">6.25% (优秀)</td>
+<td align="center">5.87% (优秀)</td>
+<td align="center">32.75% (优秀)</td>
+<td align="center">4.80% (优秀)</td>
+<td align="center">111.29% (优秀)</td>
+<td align="center">242.10% (优秀)</td>
+<td align="center">220.06% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 3                                           </li>
+<li><strong>基金规模</strong> ：  10.13亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001644.html">陆彬</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011578</td>
+<td align="center">汇丰晋信核心成长A</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">011579</td>
+<td align="center">汇丰晋信核心成长C</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">540003</td>
+<td align="center">汇丰晋信动态策略混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-05-09</td>
+<td align="center">至今</td>
+<td align="center">1年又2天</td>
+<td align="center">87.35%</td>
+<td align="center">32.91%</td>
+<td align="center">35/3263</td>
+</tr>
+<tr>
+<td align="center">540008</td>
+<td align="center">汇丰晋信低碳先锋股票</td>
+<td align="center">股票型</td>
+<td align="center">2019-08-17</td>
+<td align="center">至今</td>
+<td align="center">1年又268天</td>
+<td align="center">212.80%</td>
+<td align="center">54.90%</td>
+<td align="center">2/1183</td>
+</tr>
+<tr>
+<td align="center">001643</td>
+<td align="center">汇丰晋信智造先锋股票A</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">252.35%</td>
+<td align="center">66.44%</td>
+<td align="center">1/1113</td>
+</tr>
+<tr>
+<td align="center">001644</td>
+<td align="center">汇丰晋信智造先锋股票C</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">249.10%</td>
+<td align="center">66.44%</td>
+<td align="center">2/1113</td>
+</tr>
+</tbody></table>
+<h2 id="创金合信资源股票发起式A"><a href="#创金合信资源股票发起式A" class="headerlink" title="创金合信资源股票发起式A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/003624.html">创金合信资源股票发起式A</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">12.72% (优秀)</td>
+<td align="center">-4.17% (优秀)</td>
+<td align="center">36.15% (优秀)</td>
+<td align="center">16.62% (优秀)</td>
+<td align="center">115.04% (优秀)</td>
+<td align="center">177.75% (优秀)</td>
+<td align="center">113.68% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 2                                           </li>
+<li><strong>基金规模</strong> ：  5.15亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_003624.html">李游</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011206</td>
+<td align="center">创金合信竞争优势混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-01-25</td>
+<td align="center">至今</td>
+<td align="center">106天</td>
+<td align="center">-4.98%</td>
+<td align="center">-7.14%</td>
+<td align="center">1733/4099</td>
+</tr>
+<tr>
+<td align="center">011207</td>
+<td align="center">创金合信竞争优势混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-01-25</td>
+<td align="center">至今</td>
+<td align="center">106天</td>
+<td align="center">-5.08%</td>
+<td align="center">-7.14%</td>
+<td align="center">1756/4099</td>
+</tr>
+<tr>
+<td align="center">011142</td>
+<td align="center">创金合信新材料新能源股票A</td>
+<td align="center">股票型</td>
+<td align="center">2020-12-30</td>
+<td align="center">至今</td>
+<td align="center">132天</td>
+<td align="center">2.53%</td>
+<td align="center">0.71%</td>
+<td align="center">589/1724</td>
+</tr>
+<tr>
+<td align="center">011143</td>
+<td align="center">创金合信新材料新能源股票C</td>
+<td align="center">股票型</td>
+<td align="center">2020-12-30</td>
+<td align="center">至今</td>
+<td align="center">132天</td>
+<td align="center">2.31%</td>
+<td align="center">0.71%</td>
+<td align="center">608/1724</td>
+</tr>
+<tr>
+<td align="center">005968</td>
+<td align="center">创金合信工业周期股票A</td>
+<td align="center">股票型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">200.13%</td>
+<td align="center">54.34%</td>
+<td align="center">7/881</td>
+</tr>
+<tr>
+<td align="center">005969</td>
+<td align="center">创金合信工业周期股票C</td>
+<td align="center">股票型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">194.26%</td>
+<td align="center">54.34%</td>
+<td align="center">8/881</td>
+</tr>
+<tr>
+<td align="center">003624</td>
+<td align="center">创金合信资源股票发起式A</td>
+<td align="center">股票型</td>
+<td align="center">2016-11-02</td>
+<td align="center">至今</td>
+<td align="center">4年又191天</td>
+<td align="center">136.50%</td>
+<td align="center">69.37%</td>
+<td align="center">78/591</td>
+</tr>
+<tr>
+<td align="center">003625</td>
+<td align="center">创金合信资源股票发起式C</td>
+<td align="center">股票型</td>
+<td align="center">2016-11-02</td>
+<td align="center">至今</td>
+<td align="center">4年又191天</td>
+<td align="center">131.01%</td>
+<td align="center">69.37%</td>
+<td align="center">83/591</td>
+</tr>
+</tbody></table>
+<h2 id="汇丰晋信低碳先锋股票-1"><a href="#汇丰晋信低碳先锋股票-1" class="headerlink" title="汇丰晋信低碳先锋股票"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/540008.html">汇丰晋信低碳先锋股票</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">9.29% (优秀)</td>
+<td align="center">2.72% (优秀)</td>
+<td align="center">35.04% (优秀)</td>
+<td align="center">3.42% (优秀)</td>
+<td align="center">115.05% (优秀)</td>
+<td align="center">217.03% (优秀)</td>
+<td align="center">129.57% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 1                                           </li>
+<li><strong>基金规模</strong> ：  64.96亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_540008.html">陆彬</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011578</td>
+<td align="center">汇丰晋信核心成长A</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">011579</td>
+<td align="center">汇丰晋信核心成长C</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">540003</td>
+<td align="center">汇丰晋信动态策略混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-05-09</td>
+<td align="center">至今</td>
+<td align="center">1年又2天</td>
+<td align="center">87.35%</td>
+<td align="center">32.91%</td>
+<td align="center">35/3263</td>
+</tr>
+<tr>
+<td align="center">540008</td>
+<td align="center">汇丰晋信低碳先锋股票</td>
+<td align="center">股票型</td>
+<td align="center">2019-08-17</td>
+<td align="center">至今</td>
+<td align="center">1年又268天</td>
+<td align="center">212.80%</td>
+<td align="center">54.90%</td>
+<td align="center">2/1183</td>
+</tr>
+<tr>
+<td align="center">001643</td>
+<td align="center">汇丰晋信智造先锋股票A</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">252.35%</td>
+<td align="center">66.44%</td>
+<td align="center">1/1113</td>
+</tr>
+<tr>
+<td align="center">001644</td>
+<td align="center">汇丰晋信智造先锋股票C</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">249.10%</td>
+<td align="center">66.44%</td>
+<td align="center">2/1113</td>
+</tr>
+</tbody></table>
+<h2 id="汇丰晋信智造先锋股票A"><a href="#汇丰晋信智造先锋股票A" class="headerlink" title="汇丰晋信智造先锋股票A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001643.html">汇丰晋信智造先锋股票A</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">6.30% (优秀)</td>
+<td align="center">6.00% (优秀)</td>
+<td align="center">33.09% (优秀)</td>
+<td align="center">4.99% (优秀)</td>
+<td align="center">112.35% (优秀)</td>
+<td align="center">245.30% (优秀)</td>
+<td align="center">224.61% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 3                                           </li>
+<li><strong>基金规模</strong> ：  16.48亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001643.html">陆彬</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011578</td>
+<td align="center">汇丰晋信核心成长A</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">011579</td>
+<td align="center">汇丰晋信核心成长C</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-12</td>
+<td align="center">至今</td>
+<td align="center">29天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">540003</td>
+<td align="center">汇丰晋信动态策略混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-05-09</td>
+<td align="center">至今</td>
+<td align="center">1年又2天</td>
+<td align="center">87.35%</td>
+<td align="center">32.91%</td>
+<td align="center">35/3263</td>
+</tr>
+<tr>
+<td align="center">540008</td>
+<td align="center">汇丰晋信低碳先锋股票</td>
+<td align="center">股票型</td>
+<td align="center">2019-08-17</td>
+<td align="center">至今</td>
+<td align="center">1年又268天</td>
+<td align="center">212.80%</td>
+<td align="center">54.90%</td>
+<td align="center">2/1183</td>
+</tr>
+<tr>
+<td align="center">001643</td>
+<td align="center">汇丰晋信智造先锋股票A</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">252.35%</td>
+<td align="center">66.44%</td>
+<td align="center">1/1113</td>
+</tr>
+<tr>
+<td align="center">001644</td>
+<td align="center">汇丰晋信智造先锋股票C</td>
+<td align="center">股票型</td>
+<td align="center">2019-05-18</td>
+<td align="center">至今</td>
+<td align="center">1年又359天</td>
+<td align="center">249.10%</td>
+<td align="center">66.44%</td>
+<td align="center">2/1113</td>
+</tr>
+</tbody></table>
+<h2 id="创金合信资源股票发起式C"><a href="#创金合信资源股票发起式C" class="headerlink" title="创金合信资源股票发起式C"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/003625.html">创金合信资源股票发起式C</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票型  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">12.67% (优秀)</td>
+<td align="center">-4.30% (优秀)</td>
+<td align="center">35.81% (优秀)</td>
+<td align="center">16.41% (优秀)</td>
+<td align="center">113.98% (优秀)</td>
+<td align="center">177.26% (优秀)</td>
+<td align="center">112.23% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 2                                           </li>
+<li><strong>基金规模</strong> ：  7.28亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_003625.html">李游</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011206</td>
+<td align="center">创金合信竞争优势混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-01-25</td>
+<td align="center">至今</td>
+<td align="center">106天</td>
+<td align="center">-4.98%</td>
+<td align="center">-7.14%</td>
+<td align="center">1733/4099</td>
+</tr>
+<tr>
+<td align="center">011207</td>
+<td align="center">创金合信竞争优势混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-01-25</td>
+<td align="center">至今</td>
+<td align="center">106天</td>
+<td align="center">-5.08%</td>
+<td align="center">-7.14%</td>
+<td align="center">1756/4099</td>
+</tr>
+<tr>
+<td align="center">011142</td>
+<td align="center">创金合信新材料新能源股票A</td>
+<td align="center">股票型</td>
+<td align="center">2020-12-30</td>
+<td align="center">至今</td>
+<td align="center">132天</td>
+<td align="center">2.53%</td>
+<td align="center">0.71%</td>
+<td align="center">589/1724</td>
+</tr>
+<tr>
+<td align="center">011143</td>
+<td align="center">创金合信新材料新能源股票C</td>
+<td align="center">股票型</td>
+<td align="center">2020-12-30</td>
+<td align="center">至今</td>
+<td align="center">132天</td>
+<td align="center">2.31%</td>
+<td align="center">0.71%</td>
+<td align="center">608/1724</td>
+</tr>
+<tr>
+<td align="center">005968</td>
+<td align="center">创金合信工业周期股票A</td>
+<td align="center">股票型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">200.13%</td>
+<td align="center">54.34%</td>
+<td align="center">7/881</td>
+</tr>
+<tr>
+<td align="center">005969</td>
+<td align="center">创金合信工业周期股票C</td>
+<td align="center">股票型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">194.26%</td>
+<td align="center">54.34%</td>
+<td align="center">8/881</td>
+</tr>
+<tr>
+<td align="center">003624</td>
+<td align="center">创金合信资源股票发起式A</td>
+<td align="center">股票型</td>
+<td align="center">2016-11-02</td>
+<td align="center">至今</td>
+<td align="center">4年又191天</td>
+<td align="center">136.50%</td>
+<td align="center">69.37%</td>
+<td align="center">78/591</td>
+</tr>
+<tr>
+<td align="center">003625</td>
+<td align="center">创金合信资源股票发起式C</td>
+<td align="center">股票型</td>
+<td align="center">2016-11-02</td>
+<td align="center">至今</td>
+<td align="center">4年又191天</td>
+<td align="center">131.01%</td>
+<td align="center">69.37%</td>
+<td align="center">83/591</td>
+</tr>
+</tbody></table>
+<h1 id="指数型"><a href="#指数型" class="headerlink" title="指数型"></a>指数型</h1><h2 id="信诚中证800有色指数"><a href="#信诚中证800有色指数" class="headerlink" title="信诚中证800有色指数"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/165520.html">信诚中证800有色指数</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票指数  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">15.09% (优秀)</td>
+<td align="center">7.72% (优秀)</td>
+<td align="center">46.42% (优秀)</td>
+<td align="center">25.83% (优秀)</td>
+<td align="center">96.32% (优秀)</td>
+<td align="center">109.73% (优秀)</td>
+<td align="center">57.00% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  14.79亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_165520.html">黄稚</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">150148</td>
+<td align="center">信诚中证800医药指数分级A</td>
+<td align="center">固定收益</td>
+<td align="center">2019-09-04</td>
+<td align="center">2020-12-31</td>
+<td align="center">1年又119天</td>
+<td align="center">6.25%</td>
+<td align="center">61.91%</td>
+<td align="center">28/42</td>
+</tr>
+<tr>
+<td align="center">150149</td>
+<td align="center">信诚中证800医药指数分级B</td>
+<td align="center">分级杠杆</td>
+<td align="center">2019-09-04</td>
+<td align="center">2020-12-31</td>
+<td align="center">1年又119天</td>
+<td align="center">146.63%</td>
+<td align="center">61.91%</td>
+<td align="center">6/42</td>
+</tr>
+<tr>
+<td align="center">150173</td>
+<td align="center">信诚中证TMT产业主题分级A</td>
+<td align="center">固定收益</td>
+<td align="center">2019-09-04</td>
+<td align="center">2020-12-31</td>
+<td align="center">1年又119天</td>
+<td align="center">5.98%</td>
+<td align="center">61.91%</td>
+<td align="center">39/42</td>
+</tr>
+<tr>
+<td align="center">150174</td>
+<td align="center">信诚中证TMT产业主题分级B</td>
+<td align="center">分级杠杆</td>
+<td align="center">2019-09-04</td>
+<td align="center">2020-12-31</td>
+<td align="center">1年又119天</td>
+<td align="center">42.68%</td>
+<td align="center">61.91%</td>
+<td align="center">15/42</td>
+</tr>
+<tr>
+<td align="center">165519</td>
+<td align="center">信诚中证800医药指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-09-04</td>
+<td align="center">至今</td>
+<td align="center">1年又250天</td>
+<td align="center">71.05%</td>
+<td align="center">49.71%</td>
+<td align="center">266/1198</td>
+</tr>
+<tr>
+<td align="center">165520</td>
+<td align="center">信诚中证800有色指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-09-04</td>
+<td align="center">至今</td>
+<td align="center">1年又250天</td>
+<td align="center">94.25%</td>
+<td align="center">49.71%</td>
+<td align="center">123/1198</td>
+</tr>
+<tr>
+<td align="center">165522</td>
+<td align="center">信诚中证TMT产业主题指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-09-04</td>
+<td align="center">至今</td>
+<td align="center">1年又250天</td>
+<td align="center">19.31%</td>
+<td align="center">49.71%</td>
+<td align="center">1014/1198</td>
+</tr>
+<tr>
+<td align="center">165523</td>
+<td align="center">信诚中证信息安全指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-09-04</td>
+<td align="center">至今</td>
+<td align="center">1年又250天</td>
+<td align="center">-3.84%</td>
+<td align="center">49.71%</td>
+<td align="center">1187/1198</td>
+</tr>
+<tr>
+<td align="center">165524</td>
+<td align="center">信诚中证智能家居指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-09-04</td>
+<td align="center">至今</td>
+<td align="center">1年又250天</td>
+<td align="center">13.40%</td>
+<td align="center">49.71%</td>
+<td align="center">1069/1198</td>
+</tr>
+<tr>
+<td align="center">165511</td>
+<td align="center">中信保诚中证500指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2018-07-25</td>
+<td align="center">至今</td>
+<td align="center">2年又291天</td>
+<td align="center">47.57%</td>
+<td align="center">64.10%</td>
+<td align="center">555/918</td>
+</tr>
+<tr>
+<td align="center">165525</td>
+<td align="center">信诚中证基建工程指数LOF</td>
+<td align="center">股票指数</td>
+<td align="center">2018-07-25</td>
+<td align="center">至今</td>
+<td align="center">2年又291天</td>
+<td align="center">-21.62%</td>
+<td align="center">64.10%</td>
+<td align="center">917/918</td>
+</tr>
+</tbody></table>
+<h2 id="招商中证白酒指数"><a href="#招商中证白酒指数" class="headerlink" title="招商中证白酒指数"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/161725.html">招商中证白酒指数</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票指数  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">4.54% (优秀)</td>
+<td align="center">-18.29% (不佳)</td>
+<td align="center">12.70% (优秀)</td>
+<td align="center">-7.22% (不佳)</td>
+<td align="center">98.96% (优秀)</td>
+<td align="center">137.32% (优秀)</td>
+<td align="center">167.64% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  499.14亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_161725.html">侯昊</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011853</td>
+<td align="center">招商中证消费龙头指数增强A</td>
+<td align="center">股票指数</td>
+<td align="center">2021-04-16</td>
+<td align="center">至今</td>
+<td align="center">25天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">011854</td>
+<td align="center">招商中证消费龙头指数增强C</td>
+<td align="center">股票指数</td>
+<td align="center">2021-04-16</td>
+<td align="center">至今</td>
+<td align="center">25天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">004408</td>
+<td align="center">招商深证100指数C</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">67.52%</td>
+<td align="center">53.77%</td>
+<td align="center">200/736</td>
+</tr>
+<tr>
+<td align="center">004410</td>
+<td align="center">招商央视财经50指数C</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">57.35%</td>
+<td align="center">53.77%</td>
+<td align="center">270/736</td>
+</tr>
+<tr>
+<td align="center">150249</td>
+<td align="center">招商中证银行指数分级A</td>
+<td align="center">固定收益</td>
+<td align="center">2017-09-05</td>
+<td align="center">2020-12-31</td>
+<td align="center">3年又118天</td>
+<td align="center">15.69%</td>
+<td align="center">28.01%</td>
+<td align="center">28/42</td>
+</tr>
+<tr>
+<td align="center">150251</td>
+<td align="center">招商中证煤炭等权指数分级A</td>
+<td align="center">固定收益</td>
+<td align="center">2017-09-05</td>
+<td align="center">2020-12-31</td>
+<td align="center">3年又118天</td>
+<td align="center">15.69%</td>
+<td align="center">28.01%</td>
+<td align="center">28/42</td>
+</tr>
+<tr>
+<td align="center">150252</td>
+<td align="center">招商中证煤炭等权指数分级B</td>
+<td align="center">分级杠杆</td>
+<td align="center">2017-09-05</td>
+<td align="center">2020-12-31</td>
+<td align="center">3年又118天</td>
+<td align="center">-32.84%</td>
+<td align="center">28.01%</td>
+<td align="center">37/42</td>
+</tr>
+<tr>
+<td align="center">161715</td>
+<td align="center">招商大宗商品(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">10.25%</td>
+<td align="center">53.77%</td>
+<td align="center">615/736</td>
+</tr>
+<tr>
+<td align="center">161723</td>
+<td align="center">招商中证银行指数</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">32.38%</td>
+<td align="center">53.77%</td>
+<td align="center">460/736</td>
+</tr>
+<tr>
+<td align="center">161724</td>
+<td align="center">招商中证煤炭等权指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">4.16%</td>
+<td align="center">53.77%</td>
+<td align="center">668/736</td>
+</tr>
+<tr>
+<td align="center">161726</td>
+<td align="center">招商国证生物医药指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">149.58%</td>
+<td align="center">53.77%</td>
+<td align="center">43/736</td>
+</tr>
+<tr>
+<td align="center">217016</td>
+<td align="center">招商深证100指数A</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">69.95%</td>
+<td align="center">53.77%</td>
+<td align="center">193/736</td>
+</tr>
+<tr>
+<td align="center">217027</td>
+<td align="center">招商央视财经50指数A</td>
+<td align="center">股票指数</td>
+<td align="center">2017-09-05</td>
+<td align="center">至今</td>
+<td align="center">3年又249天</td>
+<td align="center">59.72%</td>
+<td align="center">53.77%</td>
+<td align="center">248/736</td>
+</tr>
+<tr>
+<td align="center">161725</td>
+<td align="center">招商中证白酒指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2017-08-22</td>
+<td align="center">至今</td>
+<td align="center">3年又263天</td>
+<td align="center">249.88%</td>
+<td align="center">57.87%</td>
+<td align="center">3/725</td>
+</tr>
+</tbody></table>
+<h2 id="国泰国证有色金属行业指数"><a href="#国泰国证有色金属行业指数" class="headerlink" title="国泰国证有色金属行业指数"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/160221.html">国泰国证有色金属行业指数</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票指数  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">15.33% (优秀)</td>
+<td align="center">9.43% (优秀)</td>
+<td align="center">42.58% (优秀)</td>
+<td align="center">22.68% (优秀)</td>
+<td align="center">84.72% (优秀)</td>
+<td align="center">91.26% (优秀)</td>
+<td align="center">40.70% (良好)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  26.68亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_160221.html">谢东旭</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011319</td>
+<td align="center">国泰上证综合ETF联接A</td>
+<td align="center">联接基金</td>
+<td align="center">2021-01-22</td>
+<td align="center">至今</td>
+<td align="center">109天</td>
+<td align="center">-2.44%</td>
+<td align="center">-7.36%</td>
+<td align="center">382/1783</td>
+</tr>
+<tr>
+<td align="center">011320</td>
+<td align="center">国泰上证综合ETF联接C</td>
+<td align="center">联接基金</td>
+<td align="center">2021-01-22</td>
+<td align="center">至今</td>
+<td align="center">109天</td>
+<td align="center">-2.52%</td>
+<td align="center">-7.36%</td>
+<td align="center">393/1783</td>
+</tr>
+<tr>
+<td align="center">005867</td>
+<td align="center">国泰沪深300指数C</td>
+<td align="center">股票指数</td>
+<td align="center">2021-01-08</td>
+<td align="center">至今</td>
+<td align="center">123天</td>
+<td align="center">-8.29%</td>
+<td align="center">-4.79%</td>
+<td align="center">1154/1754</td>
+</tr>
+<tr>
+<td align="center">020011</td>
+<td align="center">国泰沪深300指数A</td>
+<td align="center">股票指数</td>
+<td align="center">2021-01-08</td>
+<td align="center">至今</td>
+<td align="center">123天</td>
+<td align="center">-8.14%</td>
+<td align="center">-4.79%</td>
+<td align="center">1138/1754</td>
+</tr>
+<tr>
+<td align="center">510760</td>
+<td align="center">国泰上证综合交易ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2020-08-21</td>
+<td align="center">至今</td>
+<td align="center">263天</td>
+<td align="center">-0.62%</td>
+<td align="center">7.28%</td>
+<td align="center">1247/1615</td>
+</tr>
+<tr>
+<td align="center">000512</td>
+<td align="center">国泰沪深300指数增强A</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-01</td>
+<td align="center">至今</td>
+<td align="center">1年又192天</td>
+<td align="center">41.26%</td>
+<td align="center">47.24%</td>
+<td align="center">656/1265</td>
+</tr>
+<tr>
+<td align="center">002063</td>
+<td align="center">国泰沪深300指数增强C</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-01</td>
+<td align="center">至今</td>
+<td align="center">1年又192天</td>
+<td align="center">41.06%</td>
+<td align="center">47.24%</td>
+<td align="center">662/1265</td>
+</tr>
+<tr>
+<td align="center">003760</td>
+<td align="center">国泰中证500指数增强A</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-01</td>
+<td align="center">至今</td>
+<td align="center">1年又192天</td>
+<td align="center">27.72%</td>
+<td align="center">47.24%</td>
+<td align="center">951/1265</td>
+</tr>
+<tr>
+<td align="center">003761</td>
+<td align="center">国泰中证500指数增强C</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-01</td>
+<td align="center">至今</td>
+<td align="center">1年又192天</td>
+<td align="center">27.67%</td>
+<td align="center">47.24%</td>
+<td align="center">953/1265</td>
+</tr>
+<tr>
+<td align="center">160221</td>
+<td align="center">国泰国证有色金属行业指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-01</td>
+<td align="center">至今</td>
+<td align="center">1年又192天</td>
+<td align="center">94.67%</td>
+<td align="center">47.24%</td>
+<td align="center">102/1265</td>
+</tr>
+<tr>
+<td align="center">160225</td>
+<td align="center">国泰国证新能源汽车指数</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-01</td>
+<td align="center">至今</td>
+<td align="center">1年又192天</td>
+<td align="center">118.83%</td>
+<td align="center">47.24%</td>
+<td align="center">34/1265</td>
+</tr>
+<tr>
+<td align="center">005799</td>
+<td align="center">创金合信春来回报A</td>
+<td align="center">混合型</td>
+<td align="center">2018-06-07</td>
+<td align="center">2018-07-09</td>
+<td align="center">32天</td>
+<td align="center">-0.62%</td>
+<td align="center">-6.09%</td>
+<td align="center">455/2776</td>
+</tr>
+<tr>
+<td align="center">005800</td>
+<td align="center">创金合信春来回报C</td>
+<td align="center">混合型</td>
+<td align="center">2018-06-07</td>
+<td align="center">2018-07-09</td>
+<td align="center">32天</td>
+<td align="center">-0.68%</td>
+<td align="center">-6.09%</td>
+<td align="center">466/2776</td>
+</tr>
+<tr>
+<td align="center">004359</td>
+<td align="center">创金合信量化核心混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-11</td>
+<td align="center">2018-07-09</td>
+<td align="center">301天</td>
+<td align="center">-1.81%</td>
+<td align="center">-3.36%</td>
+<td align="center">1171/2336</td>
+</tr>
+<tr>
+<td align="center">004360</td>
+<td align="center">创金合信量化核心混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-11</td>
+<td align="center">2018-07-09</td>
+<td align="center">301天</td>
+<td align="center">-2.59%</td>
+<td align="center">-3.36%</td>
+<td align="center">1232/2336</td>
+</tr>
+<tr>
+<td align="center">000312</td>
+<td align="center">华安沪深300增强A</td>
+<td align="center">股票指数</td>
+<td align="center">2015-01-21</td>
+<td align="center">2017-01-26</td>
+<td align="center">2年又6天</td>
+<td align="center">7.09%</td>
+<td align="center">6.44%</td>
+<td align="center">130/315</td>
+</tr>
+<tr>
+<td align="center">000313</td>
+<td align="center">华安沪深300增强C</td>
+<td align="center">股票指数</td>
+<td align="center">2015-01-21</td>
+<td align="center">2017-01-26</td>
+<td align="center">2年又6天</td>
+<td align="center">5.92%</td>
+<td align="center">6.44%</td>
+<td align="center">142/315</td>
+</tr>
+</tbody></table>
+<h2 id="富国中证新能源汽车指数"><a href="#富国中证新能源汽车指数" class="headerlink" title="富国中证新能源汽车指数"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/161028.html">富国中证新能源汽车指数</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票指数  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">7.20% (优秀)</td>
+<td align="center">-10.12% (良好)</td>
+<td align="center">13.21% (优秀)</td>
+<td align="center">-4.52% (不佳)</td>
+<td align="center">78.05% (优秀)</td>
+<td align="center">151.56% (优秀)</td>
+<td align="center">79.78% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  78.26亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_161028.html">牛志冬等</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">512710</td>
+<td align="center">富国中证军工龙头ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2019-07-23</td>
+<td align="center">至今</td>
+<td align="center">1年又293天</td>
+<td align="center">41.60%</td>
+<td align="center">58.66%</td>
+<td align="center">739/1161</td>
+</tr>
+<tr>
+<td align="center">007191</td>
+<td align="center">富国中证价值ETF联接C</td>
+<td align="center">联接基金</td>
+<td align="center">2019-04-02</td>
+<td align="center">2020-05-25</td>
+<td align="center">1年又54天</td>
+<td align="center">-7.02%</td>
+<td align="center">8.05%</td>
+<td align="center">911/1126</td>
+</tr>
+<tr>
+<td align="center">006748</td>
+<td align="center">富国中证价值ETF联接A</td>
+<td align="center">联接基金</td>
+<td align="center">2018-12-25</td>
+<td align="center">2020-05-25</td>
+<td align="center">1年又152天</td>
+<td align="center">17.50%</td>
+<td align="center">41.77%</td>
+<td align="center">869/1030</td>
+</tr>
+<tr>
+<td align="center">512040</td>
+<td align="center">富国中证价值ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2018-11-07</td>
+<td align="center">2020-05-25</td>
+<td align="center">1年又200天</td>
+<td align="center">14.52%</td>
+<td align="center">35.23%</td>
+<td align="center">820/1010</td>
+</tr>
+<tr>
+<td align="center">004674</td>
+<td align="center">富国新机遇灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-11-27</td>
+<td align="center">2018-12-12</td>
+<td align="center">1年又15天</td>
+<td align="center">-11.93%</td>
+<td align="center">-11.04%</td>
+<td align="center">1150/2355</td>
+</tr>
+<tr>
+<td align="center">004675</td>
+<td align="center">富国新机遇灵活配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-11-27</td>
+<td align="center">2018-12-12</td>
+<td align="center">1年又15天</td>
+<td align="center">-0.11%</td>
+<td align="center">-1.53%</td>
+<td align="center">1142/2566</td>
+</tr>
+<tr>
+<td align="center">161037</td>
+<td align="center">富国中证高端制造指数增强型</td>
+<td align="center">股票指数</td>
+<td align="center">2017-07-25</td>
+<td align="center">至今</td>
+<td align="center">3年又291天</td>
+<td align="center">83.88%</td>
+<td align="center">61.22%</td>
+<td align="center">164/707</td>
+</tr>
+<tr>
+<td align="center">161036</td>
+<td align="center">富国中证娱乐主题指数增强型</td>
+<td align="center">股票指数</td>
+<td align="center">2017-03-13</td>
+<td align="center">至今</td>
+<td align="center">4年又60天</td>
+<td align="center">-19.93%</td>
+<td align="center">65.13%</td>
+<td align="center">636/645</td>
+</tr>
+<tr>
+<td align="center">161035</td>
+<td align="center">富国中证医药主题指数增强</td>
+<td align="center">股票指数</td>
+<td align="center">2016-11-11</td>
+<td align="center">至今</td>
+<td align="center">4年又182天</td>
+<td align="center">116.70%</td>
+<td align="center">66.69%</td>
+<td align="center">104/605</td>
+</tr>
+<tr>
+<td align="center">150211</td>
+<td align="center">富国中证新能源汽车指数分级A</td>
+<td align="center">固定收益</td>
+<td align="center">2015-05-13</td>
+<td align="center">2020-12-31</td>
+<td align="center">5年又234天</td>
+<td align="center">32.39%</td>
+<td align="center">27.21%</td>
+<td align="center">5/22</td>
+</tr>
+<tr>
+<td align="center">150212</td>
+<td align="center">富国中证新能源汽车指数分级B</td>
+<td align="center">分级杠杆</td>
+<td align="center">2015-05-13</td>
+<td align="center">2020-12-31</td>
+<td align="center">5年又234天</td>
+<td align="center">-29.40%</td>
+<td align="center">27.21%</td>
+<td align="center">16/22</td>
+</tr>
+<tr>
+<td align="center">161025</td>
+<td align="center">富国中证移动互联网指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2015-05-13</td>
+<td align="center">至今</td>
+<td align="center">6年又0天</td>
+<td align="center">-32.81%</td>
+<td align="center">33.32%</td>
+<td align="center">333/350</td>
+</tr>
+<tr>
+<td align="center">161028</td>
+<td align="center">富国中证新能源汽车指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2015-05-13</td>
+<td align="center">至今</td>
+<td align="center">6年又0天</td>
+<td align="center">42.22%</td>
+<td align="center">33.32%</td>
+<td align="center">119/350</td>
+</tr>
+</tbody></table>
+<h2 id="鹏华酒A"><a href="#鹏华酒A" class="headerlink" title="鹏华酒A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/160632.html">鹏华酒A</a></h2><ul>
+<li><strong>基金类型</strong> ： 股票指数  |  高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">4.81% (优秀)</td>
+<td align="center">-16.56% (不佳)</td>
+<td align="center">13.92% (优秀)</td>
+<td align="center">-5.82% (不佳)</td>
+<td align="center">98.34% (优秀)</td>
+<td align="center">148.96% (优秀)</td>
+<td align="center">168.76% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  40.35亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_160632.html">闫冬等</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">012043</td>
+<td align="center">鹏华酒C</td>
+<td align="center">股票指数</td>
+<td align="center">2021-04-14</td>
+<td align="center">至今</td>
+<td align="center">27天</td>
+<td align="center">2.40%</td>
+<td align="center">1.57%</td>
+<td align="center">631/1891</td>
+</tr>
+<tr>
+<td align="center">159885</td>
+<td align="center">鹏华中证内地低碳经济主题ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2021-04-06</td>
+<td align="center">至今</td>
+<td align="center">35天</td>
+<td align="center">7.31%</td>
+<td align="center">-0.36%</td>
+<td align="center">60/1871</td>
+</tr>
+<tr>
+<td align="center">159880</td>
+<td align="center">鹏华国证有色金属行业ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2021-03-08</td>
+<td align="center">至今</td>
+<td align="center">64天</td>
+<td align="center">16.61%</td>
+<td align="center">2.10%</td>
+<td align="center">40/1826</td>
+</tr>
+<tr>
+<td align="center">159870</td>
+<td align="center">鹏华中证细分化工产业ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2021-02-23</td>
+<td align="center">至今</td>
+<td align="center">77天</td>
+<td align="center">-10.10%</td>
+<td align="center">-6.10%</td>
+<td align="center">1433/1799</td>
+</tr>
+<tr>
+<td align="center">159863</td>
+<td align="center">鹏华中证光伏产业ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2021-02-22</td>
+<td align="center">至今</td>
+<td align="center">78天</td>
+<td align="center">0.23%</td>
+<td align="center">-6.43%</td>
+<td align="center">182/1795</td>
+</tr>
+<tr>
+<td align="center">160620</td>
+<td align="center">鹏华中证A股资源产业指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-20</td>
+<td align="center">至今</td>
+<td align="center">1年又173天</td>
+<td align="center">54.59%</td>
+<td align="center">46.44%</td>
+<td align="center">390/1255</td>
+</tr>
+<tr>
+<td align="center">160631</td>
+<td align="center">鹏华银行A</td>
+<td align="center">股票指数</td>
+<td align="center">2019-11-20</td>
+<td align="center">2021-01-20</td>
+<td align="center">1年又62天</td>
+<td align="center">9.77%</td>
+<td align="center">55.51%</td>
+<td align="center">1201/1265</td>
+</tr>
+<tr>
+<td align="center">160628</td>
+<td align="center">鹏华中证800地产指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-04-30</td>
+<td align="center">至今</td>
+<td align="center">2年又12天</td>
+<td align="center">0.25%</td>
+<td align="center">55.93%</td>
+<td align="center">1055/1104</td>
+</tr>
+<tr>
+<td align="center">160626</td>
+<td align="center">鹏华信息A</td>
+<td align="center">股票指数</td>
+<td align="center">2019-03-19</td>
+<td align="center">2021-01-20</td>
+<td align="center">1年又308天</td>
+<td align="center">61.20%</td>
+<td align="center">65.15%</td>
+<td align="center">503/1072</td>
+</tr>
+<tr>
+<td align="center">160632</td>
+<td align="center">鹏华酒A</td>
+<td align="center">股票指数</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">167.39%</td>
+<td align="center">55.66%</td>
+<td align="center">14/1062</td>
+</tr>
+<tr>
+<td align="center">160634</td>
+<td align="center">鹏华中证环保产业指数(LOF)</td>
+<td align="center">股票指数</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">43.79%</td>
+<td align="center">55.66%</td>
+<td align="center">596/1062</td>
+</tr>
+</tbody></table>
+<h1 id="债券型"><a href="#债券型" class="headerlink" title="债券型"></a>债券型</h1><h2 id="华商稳定增利债券C"><a href="#华商稳定增利债券C" class="headerlink" title="华商稳定增利债券C"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/630109.html">华商稳定增利债券C</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">3.50% (优秀)</td>
+<td align="center">1.57% (优秀)</td>
+<td align="center">11.07% (优秀)</td>
+<td align="center">6.92% (优秀)</td>
+<td align="center">23.31% (优秀)</td>
+<td align="center">36.73% (优秀)</td>
+<td align="center">42.41% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 5                                           </li>
+<li><strong>基金规模</strong> ：  6.03亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_630109.html">张永志</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">007683</td>
+<td align="center">华商转债精选债券A</td>
+<td align="center">债券型</td>
+<td align="center">2020-09-29</td>
+<td align="center">至今</td>
+<td align="center">224天</td>
+<td align="center">1.29%</td>
+<td align="center">2.53%</td>
+<td align="center">2078/2445</td>
+</tr>
+<tr>
+<td align="center">007684</td>
+<td align="center">华商转债精选债券C</td>
+<td align="center">债券型</td>
+<td align="center">2020-09-29</td>
+<td align="center">至今</td>
+<td align="center">224天</td>
+<td align="center">1.11%</td>
+<td align="center">2.53%</td>
+<td align="center">2130/2445</td>
+</tr>
+<tr>
+<td align="center">007210</td>
+<td align="center">华商瑞丰短债C</td>
+<td align="center">债券型</td>
+<td align="center">2019-05-24</td>
+<td align="center">2019-08-23</td>
+<td align="center">91天</td>
+<td align="center">0.67%</td>
+<td align="center">1.91%</td>
+<td align="center">1654/1756</td>
+</tr>
+<tr>
+<td align="center">000463</td>
+<td align="center">华商双债丰利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">2020-03-16</td>
+<td align="center">1年又233天</td>
+<td align="center">-1.27%</td>
+<td align="center">10.22%</td>
+<td align="center">1257/1273</td>
+</tr>
+<tr>
+<td align="center">000481</td>
+<td align="center">华商双债丰利债券C</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">2020-03-16</td>
+<td align="center">1年又233天</td>
+<td align="center">-1.98%</td>
+<td align="center">10.22%</td>
+<td align="center">1260/1273</td>
+</tr>
+<tr>
+<td align="center">001448</td>
+<td align="center">华商双翼平衡混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-07-27</td>
+<td align="center">2021-04-26</td>
+<td align="center">2年又274天</td>
+<td align="center">12.16%</td>
+<td align="center">69.86%</td>
+<td align="center">2512/2617</td>
+</tr>
+<tr>
+<td align="center">630003</td>
+<td align="center">华商收益增强债券A</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">至今</td>
+<td align="center">2年又289天</td>
+<td align="center">6.17%</td>
+<td align="center">15.65%</td>
+<td align="center">1162/1233</td>
+</tr>
+<tr>
+<td align="center">630103</td>
+<td align="center">华商收益增强债券B</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">至今</td>
+<td align="center">2年又289天</td>
+<td align="center">5.01%</td>
+<td align="center">15.65%</td>
+<td align="center">1184/1233</td>
+</tr>
+<tr>
+<td align="center">005273</td>
+<td align="center">华商可转债债券A</td>
+<td align="center">债券型</td>
+<td align="center">2017-12-22</td>
+<td align="center">至今</td>
+<td align="center">3年又141天</td>
+<td align="center">53.16%</td>
+<td align="center">17.98%</td>
+<td align="center">8/1133</td>
+</tr>
+<tr>
+<td align="center">005284</td>
+<td align="center">华商可转债债券C</td>
+<td align="center">债券型</td>
+<td align="center">2017-12-22</td>
+<td align="center">至今</td>
+<td align="center">3年又141天</td>
+<td align="center">51.78%</td>
+<td align="center">17.98%</td>
+<td align="center">10/1133</td>
+</tr>
+<tr>
+<td align="center">003403</td>
+<td align="center">华商瑞丰短债A</td>
+<td align="center">债券型</td>
+<td align="center">2017-03-01</td>
+<td align="center">2019-08-23</td>
+<td align="center">2年又175天</td>
+<td align="center">2.61%</td>
+<td align="center">10.39%</td>
+<td align="center">899/982</td>
+</tr>
+<tr>
+<td align="center">002924</td>
+<td align="center">华商瑞鑫定开债</td>
+<td align="center">定开债券</td>
+<td align="center">2016-08-24</td>
+<td align="center">至今</td>
+<td align="center">4年又261天</td>
+<td align="center">52.00%</td>
+<td align="center">19.07%</td>
+<td align="center">1/82</td>
+</tr>
+<tr>
+<td align="center">630009</td>
+<td align="center">华商稳定增利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2011-03-15</td>
+<td align="center">至今</td>
+<td align="center">10年又60天</td>
+<td align="center">129.22%</td>
+<td align="center">76.32%</td>
+<td align="center">9/149</td>
+</tr>
+<tr>
+<td align="center">630109</td>
+<td align="center">华商稳定增利债券C</td>
+<td align="center">债券型</td>
+<td align="center">2011-03-15</td>
+<td align="center">至今</td>
+<td align="center">10年又60天</td>
+<td align="center">119.23%</td>
+<td align="center">76.32%</td>
+<td align="center">15/149</td>
+</tr>
+<tr>
+<td align="center">630007</td>
+<td align="center">华商稳健双利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2010-08-09</td>
+<td align="center">至今</td>
+<td align="center">10年又278天</td>
+<td align="center">93.14%</td>
+<td align="center">77.30%</td>
+<td align="center">25/121</td>
+</tr>
+<tr>
+<td align="center">630107</td>
+<td align="center">华商稳健双利债券B</td>
+<td align="center">债券型</td>
+<td align="center">2010-08-09</td>
+<td align="center">至今</td>
+<td align="center">10年又278天</td>
+<td align="center">84.34%</td>
+<td align="center">77.30%</td>
+<td align="center">39/121</td>
+</tr>
+</tbody></table>
+<h2 id="华夏可转债增强债券A"><a href="#华夏可转债增强债券A" class="headerlink" title="华夏可转债增强债券A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001045.html">华夏可转债增强债券A</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-0.68% (不佳)</td>
+<td align="center">-7.01% (不佳)</td>
+<td align="center">10.09% (优秀)</td>
+<td align="center">1.45% (良好)</td>
+<td align="center">38.75% (优秀)</td>
+<td align="center">65.19% (优秀)</td>
+<td align="center">60.08% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 2                                           </li>
+<li><strong>基金规模</strong> ：  18.05亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001045.html">何家琪</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">010971</td>
+<td align="center">华夏永鑫六个月持有期混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-20</td>
+<td align="center">至今</td>
+<td align="center">21天</td>
+<td align="center">0.08%</td>
+<td align="center">-0.33%</td>
+<td align="center">1620/4547</td>
+</tr>
+<tr>
+<td align="center">010972</td>
+<td align="center">华夏永鑫六个月持有期混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-20</td>
+<td align="center">至今</td>
+<td align="center">21天</td>
+<td align="center">0.08%</td>
+<td align="center">-0.33%</td>
+<td align="center">1620/4547</td>
+</tr>
+<tr>
+<td align="center">010979</td>
+<td align="center">华夏鼎润债券A</td>
+<td align="center">债券型</td>
+<td align="center">2021-03-19</td>
+<td align="center">至今</td>
+<td align="center">53天</td>
+<td align="center">0.42%</td>
+<td align="center">0.73%</td>
+<td align="center">2088/2655</td>
+</tr>
+<tr>
+<td align="center">010980</td>
+<td align="center">华夏鼎润债券C</td>
+<td align="center">债券型</td>
+<td align="center">2021-03-19</td>
+<td align="center">至今</td>
+<td align="center">53天</td>
+<td align="center">0.37%</td>
+<td align="center">0.73%</td>
+<td align="center">2185/2655</td>
+</tr>
+<tr>
+<td align="center">007591</td>
+<td align="center">华夏恒益18个月定开债券</td>
+<td align="center">定开债券</td>
+<td align="center">2019-09-04</td>
+<td align="center">2021-01-27</td>
+<td align="center">1年又146天</td>
+<td align="center">3.97%</td>
+<td align="center">4.55%</td>
+<td align="center">219/306</td>
+</tr>
+<tr>
+<td align="center">007576</td>
+<td align="center">华夏鼎琪三个月定开债券</td>
+<td align="center">定开债券</td>
+<td align="center">2019-07-24</td>
+<td align="center">2021-01-27</td>
+<td align="center">1年又188天</td>
+<td align="center">7.31%</td>
+<td align="center">5.12%</td>
+<td align="center">22/216</td>
+</tr>
+<tr>
+<td align="center">006776</td>
+<td align="center">华夏鼎略债券A</td>
+<td align="center">债券型</td>
+<td align="center">2019-01-25</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又47天</td>
+<td align="center">4.30%</td>
+<td align="center">7.88%</td>
+<td align="center">1279/1558</td>
+</tr>
+<tr>
+<td align="center">006777</td>
+<td align="center">华夏鼎略债券C</td>
+<td align="center">债券型</td>
+<td align="center">2019-01-25</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又47天</td>
+<td align="center">3.61%</td>
+<td align="center">7.88%</td>
+<td align="center">1452/1558</td>
+</tr>
+<tr>
+<td align="center">004046</td>
+<td align="center">华夏新锦顺混合A</td>
+<td align="center">混合型</td>
+<td align="center">2018-12-17</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又86天</td>
+<td align="center">6.43%</td>
+<td align="center">35.87%</td>
+<td align="center">2555/2724</td>
+</tr>
+<tr>
+<td align="center">004047</td>
+<td align="center">华夏新锦顺混合C</td>
+<td align="center">混合型</td>
+<td align="center">2018-12-17</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又86天</td>
+<td align="center">6.30%</td>
+<td align="center">35.87%</td>
+<td align="center">2562/2724</td>
+</tr>
+<tr>
+<td align="center">004923</td>
+<td align="center">华夏鼎祥三个月定开债A</td>
+<td align="center">定开债券</td>
+<td align="center">2018-12-17</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又86天</td>
+<td align="center">3.62%</td>
+<td align="center">7.04%</td>
+<td align="center">512/537</td>
+</tr>
+<tr>
+<td align="center">004924</td>
+<td align="center">华夏鼎祥三个月定开债C</td>
+<td align="center">定开债券</td>
+<td align="center">2018-12-17</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又86天</td>
+<td align="center">-0.22%</td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">004048</td>
+<td align="center">华夏新锦汇混合A</td>
+<td align="center">混合型</td>
+<td align="center">2018-09-28</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又166天</td>
+<td align="center">7.71%</td>
+<td align="center">28.51%</td>
+<td align="center">2433/2710</td>
+</tr>
+<tr>
+<td align="center">004049</td>
+<td align="center">华夏新锦汇混合C</td>
+<td align="center">混合型</td>
+<td align="center">2018-09-28</td>
+<td align="center">2020-03-12</td>
+<td align="center">1年又166天</td>
+<td align="center">-22.89%</td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">005791</td>
+<td align="center">华夏鼎福三个月定开债A</td>
+<td align="center">定开债券</td>
+<td align="center">2018-09-21</td>
+<td align="center">2020-05-07</td>
+<td align="center">1年又229天</td>
+<td align="center">8.76%</td>
+<td align="center">10.66%</td>
+<td align="center">196/247</td>
+</tr>
+<tr>
+<td align="center">005792</td>
+<td align="center">华夏鼎福三个月定开债C</td>
+<td align="center">定开债券</td>
+<td align="center">2018-09-21</td>
+<td align="center">2020-05-07</td>
+<td align="center">1年又229天</td>
+<td align="center"></td>
+<td align="center">0.00%</td>
+<td align="center">1/570</td>
+</tr>
+<tr>
+<td align="center">005364</td>
+<td align="center">华夏鼎顺三个月定开债A</td>
+<td align="center">定开债券</td>
+<td align="center">2018-08-06</td>
+<td align="center">2020-05-07</td>
+<td align="center">1年又275天</td>
+<td align="center">8.66%</td>
+<td align="center">10.54%</td>
+<td align="center">150/190</td>
+</tr>
+<tr>
+<td align="center">005365</td>
+<td align="center">华夏鼎顺三个月定开债C</td>
+<td align="center">定开债券</td>
+<td align="center">2018-08-06</td>
+<td align="center">2020-05-07</td>
+<td align="center">1年又275天</td>
+<td align="center">0.00%</td>
+<td align="center">0.00%</td>
+<td align="center">1/243</td>
+</tr>
+<tr>
+<td align="center">005128</td>
+<td align="center">华夏永康添福混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-02-01</td>
+<td align="center">2019-07-18</td>
+<td align="center">1年又167天</td>
+<td align="center">-0.18%</td>
+<td align="center">-2.09%</td>
+<td align="center">1055/2336</td>
+</tr>
+<tr>
+<td align="center">000014</td>
+<td align="center">华夏聚利债券</td>
+<td align="center">债券型</td>
+<td align="center">2017-12-19</td>
+<td align="center">至今</td>
+<td align="center">3年又144天</td>
+<td align="center">47.59%</td>
+<td align="center">18.03%</td>
+<td align="center">12/1104</td>
+</tr>
+<tr>
+<td align="center">001011</td>
+<td align="center">华夏希望债券A</td>
+<td align="center">债券型</td>
+<td align="center">2017-09-08</td>
+<td align="center">至今</td>
+<td align="center">3年又246天</td>
+<td align="center">14.97%</td>
+<td align="center">17.87%</td>
+<td align="center">699/1109</td>
+</tr>
+<tr>
+<td align="center">001013</td>
+<td align="center">华夏希望债券C</td>
+<td align="center">债券型</td>
+<td align="center">2017-09-08</td>
+<td align="center">至今</td>
+<td align="center">3年又246天</td>
+<td align="center">13.69%</td>
+<td align="center">17.87%</td>
+<td align="center">811/1109</td>
+</tr>
+<tr>
+<td align="center">002699</td>
+<td align="center">华夏新起航混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-07-31</td>
+<td align="center">326天</td>
+<td align="center">6.95%</td>
+<td align="center">-2.24%</td>
+<td align="center">209/2380</td>
+</tr>
+<tr>
+<td align="center">002700</td>
+<td align="center">华夏新起航混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-07-31</td>
+<td align="center">326天</td>
+<td align="center">6.69%</td>
+<td align="center">-2.24%</td>
+<td align="center">221/2380</td>
+</tr>
+<tr>
+<td align="center">002833</td>
+<td align="center">华夏新锦绣混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-12-17</td>
+<td align="center">1年又100天</td>
+<td align="center">-18.30%</td>
+<td align="center">-9.95%</td>
+<td align="center">1615/2256</td>
+</tr>
+<tr>
+<td align="center">002834</td>
+<td align="center">华夏新锦绣混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-12-17</td>
+<td align="center">1年又100天</td>
+<td align="center">5.96%</td>
+<td align="center">6.18%</td>
+<td align="center">1031/2480</td>
+</tr>
+<tr>
+<td align="center">002835</td>
+<td align="center">华夏新锦泰混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-05-28</td>
+<td align="center">262天</td>
+<td align="center">4.49%</td>
+<td align="center">1.79%</td>
+<td align="center">679/2522</td>
+</tr>
+<tr>
+<td align="center">002836</td>
+<td align="center">华夏新锦泰混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-05-28</td>
+<td align="center">262天</td>
+<td align="center">4.43%</td>
+<td align="center">1.79%</td>
+<td align="center">687/2522</td>
+</tr>
+<tr>
+<td align="center">002838</td>
+<td align="center">华夏新锦程混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2019-12-17</td>
+<td align="center">2年又100天</td>
+<td align="center">12.00%</td>
+<td align="center">14.96%</td>
+<td align="center">1224/2205</td>
+</tr>
+<tr>
+<td align="center">002839</td>
+<td align="center">华夏新锦程混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2019-12-17</td>
+<td align="center">2年又100天</td>
+<td align="center">-18.64%</td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">003820</td>
+<td align="center">华夏新锦鸿混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-07-24</td>
+<td align="center">319天</td>
+<td align="center">5.43%</td>
+<td align="center">-1.51%</td>
+<td align="center">361/2394</td>
+</tr>
+<tr>
+<td align="center">003821</td>
+<td align="center">华夏新锦鸿混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-09-08</td>
+<td align="center">2018-07-24</td>
+<td align="center">319天</td>
+<td align="center">5.29%</td>
+<td align="center">-1.51%</td>
+<td align="center">379/2394</td>
+</tr>
+<tr>
+<td align="center">001001</td>
+<td align="center">华夏债券A/B</td>
+<td align="center">债券型</td>
+<td align="center">2017-01-18</td>
+<td align="center">至今</td>
+<td align="center">4年又114天</td>
+<td align="center">30.56%</td>
+<td align="center">20.13%</td>
+<td align="center">103/868</td>
+</tr>
+<tr>
+<td align="center">001003</td>
+<td align="center">华夏债券C</td>
+<td align="center">债券型</td>
+<td align="center">2017-01-18</td>
+<td align="center">至今</td>
+<td align="center">4年又114天</td>
+<td align="center">28.82%</td>
+<td align="center">20.13%</td>
+<td align="center">127/868</td>
+</tr>
+<tr>
+<td align="center">001045</td>
+<td align="center">华夏可转债增强债券A</td>
+<td align="center">债券型</td>
+<td align="center">2016-11-18</td>
+<td align="center">至今</td>
+<td align="center">4年又175天</td>
+<td align="center">59.76%</td>
+<td align="center">18.25%</td>
+<td align="center">6/830</td>
+</tr>
+<tr>
+<td align="center">001046</td>
+<td align="center">华夏可转债增强债券I</td>
+<td align="center">债券型</td>
+<td align="center">2016-11-18</td>
+<td align="center">至今</td>
+<td align="center">4年又175天</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">-/-</td>
+</tr>
+<tr>
+<td align="center">002459</td>
+<td align="center">华夏鼎利债券发起式A</td>
+<td align="center">债券型</td>
+<td align="center">2016-11-18</td>
+<td align="center">至今</td>
+<td align="center">4年又175天</td>
+<td align="center">59.67%</td>
+<td align="center">18.25%</td>
+<td align="center">7/830</td>
+</tr>
+<tr>
+<td align="center">002460</td>
+<td align="center">华夏鼎利债券发起式C</td>
+<td align="center">债券型</td>
+<td align="center">2016-11-18</td>
+<td align="center">至今</td>
+<td align="center">4年又175天</td>
+<td align="center">58.90%</td>
+<td align="center">18.25%</td>
+<td align="center">8/830</td>
+</tr>
+<tr>
+<td align="center">000121</td>
+<td align="center">华夏永福混合A</td>
+<td align="center">混合型</td>
+<td align="center">2016-09-05</td>
+<td align="center">至今</td>
+<td align="center">4年又249天</td>
+<td align="center">60.64%</td>
+<td align="center">79.16%</td>
+<td align="center">829/1564</td>
+</tr>
+<tr>
+<td align="center">002166</td>
+<td align="center">华夏永福混合C</td>
+<td align="center">混合型</td>
+<td align="center">2016-09-05</td>
+<td align="center">至今</td>
+<td align="center">4年又249天</td>
+<td align="center">43.44%</td>
+<td align="center">64.27%</td>
+<td align="center">1642/2729</td>
+</tr>
+</tbody></table>
+<h2 id="金鹰元丰债券"><a href="#金鹰元丰债券" class="headerlink" title="金鹰元丰债券"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/210014.html">金鹰元丰债券</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">5.16% (优秀)</td>
+<td align="center">-0.91% (不佳)</td>
+<td align="center">3.45% (优秀)</td>
+<td align="center">-1.00% (不佳)</td>
+<td align="center">22.00% (优秀)</td>
+<td align="center">45.26% (优秀)</td>
+<td align="center">45.40% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  1.64亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_210014.html">林龙军</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">004657</td>
+<td align="center">金鹰民富收益混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-13</td>
+<td align="center">至今</td>
+<td align="center">28天</td>
+<td align="center">-0.16%</td>
+<td align="center">2.45%</td>
+<td align="center">4208/4496</td>
+</tr>
+<tr>
+<td align="center">004658</td>
+<td align="center">金鹰民富收益混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-04-13</td>
+<td align="center">至今</td>
+<td align="center">28天</td>
+<td align="center">-0.18%</td>
+<td align="center">2.45%</td>
+<td align="center">4218/4496</td>
+</tr>
+<tr>
+<td align="center">011351</td>
+<td align="center">金鹰年年邮益一年持有混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-03-09</td>
+<td align="center">至今</td>
+<td align="center">63天</td>
+<td align="center">1.85%</td>
+<td align="center">3.99%</td>
+<td align="center">2485/4289</td>
+</tr>
+<tr>
+<td align="center">011352</td>
+<td align="center">金鹰年年邮益一年持有混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-03-09</td>
+<td align="center">至今</td>
+<td align="center">63天</td>
+<td align="center">1.75%</td>
+<td align="center">3.99%</td>
+<td align="center">2559/4289</td>
+</tr>
+<tr>
+<td align="center">006972</td>
+<td align="center">金鹰民安回报定开A</td>
+<td align="center">混合型</td>
+<td align="center">2019-08-29</td>
+<td align="center">至今</td>
+<td align="center">1年又256天</td>
+<td align="center">37.38%</td>
+<td align="center">55.69%</td>
+<td align="center">1841/2937</td>
+</tr>
+<tr>
+<td align="center">007735</td>
+<td align="center">金鹰民安回报定开C</td>
+<td align="center">混合型</td>
+<td align="center">2019-08-29</td>
+<td align="center">至今</td>
+<td align="center">1年又256天</td>
+<td align="center">36.45%</td>
+<td align="center">55.69%</td>
+<td align="center">1870/2937</td>
+</tr>
+<tr>
+<td align="center">007233</td>
+<td align="center">金鹰鑫益混合E</td>
+<td align="center">混合型</td>
+<td align="center">2019-04-10</td>
+<td align="center">至今</td>
+<td align="center">2年又32天</td>
+<td align="center">16.93%</td>
+<td align="center">56.62%</td>
+<td align="center">2465/2763</td>
+</tr>
+<tr>
+<td align="center">002490</td>
+<td align="center">金鹰元祺信用债</td>
+<td align="center">债券型</td>
+<td align="center">2018-06-02</td>
+<td align="center">至今</td>
+<td align="center">2年又344天</td>
+<td align="center">27.02%</td>
+<td align="center">16.53%</td>
+<td align="center">125/1171</td>
+</tr>
+<tr>
+<td align="center">004265</td>
+<td align="center">金鹰民丰回报定期开放混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-06-02</td>
+<td align="center">至今</td>
+<td align="center">2年又344天</td>
+<td align="center">41.27%</td>
+<td align="center">62.78%</td>
+<td align="center">1574/2563</td>
+</tr>
+<tr>
+<td align="center">000110</td>
+<td align="center">金鹰元安混合A</td>
+<td align="center">混合型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">44.71%</td>
+<td align="center">61.41%</td>
+<td align="center">1387/2456</td>
+</tr>
+<tr>
+<td align="center">002513</td>
+<td align="center">金鹰元安混合C</td>
+<td align="center">混合型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">49.10%</td>
+<td align="center">61.41%</td>
+<td align="center">1281/2456</td>
+</tr>
+<tr>
+<td align="center">003484</td>
+<td align="center">金鹰鑫益混合A</td>
+<td align="center">混合型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">20.33%</td>
+<td align="center">61.41%</td>
+<td align="center">2197/2456</td>
+</tr>
+<tr>
+<td align="center">003485</td>
+<td align="center">金鹰鑫益混合C</td>
+<td align="center">混合型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">20.28%</td>
+<td align="center">61.41%</td>
+<td align="center">2200/2456</td>
+</tr>
+<tr>
+<td align="center">003733</td>
+<td align="center">金鹰添裕纯债债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-05-17</td>
+<td align="center">2020-06-04</td>
+<td align="center">2年又19天</td>
+<td align="center">10.04%</td>
+<td align="center">11.30%</td>
+<td align="center">728/1204</td>
+</tr>
+<tr>
+<td align="center">004267</td>
+<td align="center">金鹰持久增利债券(LOF)E</td>
+<td align="center">债券型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">39.49%</td>
+<td align="center">16.17%</td>
+<td align="center">42/1164</td>
+</tr>
+<tr>
+<td align="center">162105</td>
+<td align="center">金鹰持久增利债券(LOF)C</td>
+<td align="center">债券型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">36.84%</td>
+<td align="center">16.17%</td>
+<td align="center">51/1164</td>
+</tr>
+<tr>
+<td align="center">210014</td>
+<td align="center">金鹰元丰债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-05-17</td>
+<td align="center">至今</td>
+<td align="center">2年又360天</td>
+<td align="center">45.81%</td>
+<td align="center">16.17%</td>
+<td align="center">16/1164</td>
+</tr>
+</tbody></table>
+<h2 id="鹏华可转债债券A"><a href="#鹏华可转债债券A" class="headerlink" title="鹏华可转债债券A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/000297.html">鹏华可转债债券A</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1.38% (优秀)</td>
+<td align="center">-5.22% (不佳)</td>
+<td align="center">8.00% (优秀)</td>
+<td align="center">1.09% (一般)</td>
+<td align="center">28.33% (优秀)</td>
+<td align="center">62.84% (优秀)</td>
+<td align="center">64.12% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 3                                           </li>
+<li><strong>基金规模</strong> ：  18.68亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_000297.html">王石千</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">011071</td>
+<td align="center">鹏华安悦一年持有期混合A</td>
+<td align="center">混合型</td>
+<td align="center">2021-02-09</td>
+<td align="center">至今</td>
+<td align="center">91天</td>
+<td align="center">0.56%</td>
+<td align="center">-7.35%</td>
+<td align="center">335/4191</td>
+</tr>
+<tr>
+<td align="center">011072</td>
+<td align="center">鹏华安悦一年持有期混合C</td>
+<td align="center">混合型</td>
+<td align="center">2021-02-09</td>
+<td align="center">至今</td>
+<td align="center">91天</td>
+<td align="center">0.46%</td>
+<td align="center">-7.35%</td>
+<td align="center">352/4191</td>
+</tr>
+<tr>
+<td align="center">010964</td>
+<td align="center">鹏华可转债债券C</td>
+<td align="center">债券型</td>
+<td align="center">2020-12-17</td>
+<td align="center">至今</td>
+<td align="center">145天</td>
+<td align="center">-18.76%</td>
+<td align="center">1.68%</td>
+<td align="center">2518/2518</td>
+</tr>
+<tr>
+<td align="center">009634</td>
+<td align="center">鹏华安睿两年持有期混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-07-29</td>
+<td align="center">至今</td>
+<td align="center">286天</td>
+<td align="center">4.85%</td>
+<td align="center">10.20%</td>
+<td align="center">2570/3507</td>
+</tr>
+<tr>
+<td align="center">009635</td>
+<td align="center">鹏华安睿两年持有期混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-07-29</td>
+<td align="center">至今</td>
+<td align="center">286天</td>
+<td align="center">4.44%</td>
+<td align="center">10.20%</td>
+<td align="center">2624/3507</td>
+</tr>
+<tr>
+<td align="center">009232</td>
+<td align="center">鹏华安惠混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-07-24</td>
+<td align="center">至今</td>
+<td align="center">291天</td>
+<td align="center">8.95%</td>
+<td align="center">13.77%</td>
+<td align="center">2283/3655</td>
+</tr>
+<tr>
+<td align="center">009233</td>
+<td align="center">鹏华安惠混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-07-24</td>
+<td align="center">至今</td>
+<td align="center">291天</td>
+<td align="center">8.60%</td>
+<td align="center">13.77%</td>
+<td align="center">2363/3655</td>
+</tr>
+<tr>
+<td align="center">000329</td>
+<td align="center">鹏华丰饶定开债</td>
+<td align="center">定开债券</td>
+<td align="center">2019-09-04</td>
+<td align="center">2020-12-22</td>
+<td align="center">1年又110天</td>
+<td align="center">5.90%</td>
+<td align="center">3.81%</td>
+<td align="center">23/304</td>
+</tr>
+<tr>
+<td align="center">004504</td>
+<td align="center">鹏华永泽18个月定开债</td>
+<td align="center">定开债券</td>
+<td align="center">2019-09-04</td>
+<td align="center">至今</td>
+<td align="center">1年又250天</td>
+<td align="center">8.30%</td>
+<td align="center">5.58%</td>
+<td align="center">16/265</td>
+</tr>
+<tr>
+<td align="center">000338</td>
+<td align="center">鹏华双债保利债券</td>
+<td align="center">债券型</td>
+<td align="center">2019-07-24</td>
+<td align="center">至今</td>
+<td align="center">1年又292天</td>
+<td align="center">19.95%</td>
+<td align="center">8.96%</td>
+<td align="center">131/1714</td>
+</tr>
+<tr>
+<td align="center">001067</td>
+<td align="center">鹏华弘盛混合A</td>
+<td align="center">混合型</td>
+<td align="center">2018-11-24</td>
+<td align="center">至今</td>
+<td align="center">2年又169天</td>
+<td align="center">28.92%</td>
+<td align="center">88.70%</td>
+<td align="center">2237/2626</td>
+</tr>
+<tr>
+<td align="center">001380</td>
+<td align="center">鹏华弘盛混合C</td>
+<td align="center">混合型</td>
+<td align="center">2018-11-24</td>
+<td align="center">至今</td>
+<td align="center">2年又169天</td>
+<td align="center">28.36%</td>
+<td align="center">88.70%</td>
+<td align="center">2258/2626</td>
+</tr>
+<tr>
+<td align="center">206003</td>
+<td align="center">鹏华信用增利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2018-10-10</td>
+<td align="center">2019-11-22</td>
+<td align="center">1年又43天</td>
+<td align="center">7.35%</td>
+<td align="center">6.90%</td>
+<td align="center">343/1329</td>
+</tr>
+<tr>
+<td align="center">206004</td>
+<td align="center">鹏华信用增利债券B</td>
+<td align="center">债券型</td>
+<td align="center">2018-10-10</td>
+<td align="center">2019-11-22</td>
+<td align="center">1年又43天</td>
+<td align="center">7.02%</td>
+<td align="center">6.90%</td>
+<td align="center">388/1329</td>
+</tr>
+<tr>
+<td align="center">000297</td>
+<td align="center">鹏华可转债债券A</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-13</td>
+<td align="center">至今</td>
+<td align="center">2年又303天</td>
+<td align="center">72.26%</td>
+<td align="center">16.27%</td>
+<td align="center">7/1228</td>
+</tr>
+<tr>
+<td align="center">160622</td>
+<td align="center">鹏华丰利债券(LOF)</td>
+<td align="center">债券型</td>
+<td align="center">2018-04-12</td>
+<td align="center">至今</td>
+<td align="center">3年又30天</td>
+<td align="center">20.07%</td>
+<td align="center">16.17%</td>
+<td align="center">231/1147</td>
+</tr>
+<tr>
+<td align="center">206015</td>
+<td align="center">鹏华纯债债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-04-12</td>
+<td align="center">2020-02-05</td>
+<td align="center">1年又299天</td>
+<td align="center">10.94%</td>
+<td align="center">9.95%</td>
+<td align="center">377/1192</td>
+</tr>
+<tr>
+<td align="center">000143</td>
+<td align="center">鹏华双债加利债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-03-28</td>
+<td align="center">至今</td>
+<td align="center">3年又45天</td>
+<td align="center">34.32%</td>
+<td align="center">16.91%</td>
+<td align="center">65/1141</td>
+</tr>
+</tbody></table>
+<h2 id="富国可转债A"><a href="#富国可转债A" class="headerlink" title="富国可转债A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/100051.html">富国可转债A</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">2.23% (优秀)</td>
+<td align="center">4.88% (优秀)</td>
+<td align="center">8.34% (优秀)</td>
+<td align="center">6.10% (优秀)</td>
+<td align="center">21.82% (优秀)</td>
+<td align="center">43.39% (优秀)</td>
+<td align="center">40.33% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 2                                           </li>
+<li><strong>基金规模</strong> ：  32.52亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_100051.html">张明凯</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">009758</td>
+<td align="center">富国可转债C</td>
+<td align="center">债券型</td>
+<td align="center">2020-06-24</td>
+<td align="center">至今</td>
+<td align="center">321天</td>
+<td align="center">23.94%</td>
+<td align="center">3.50%</td>
+<td align="center">17/2336</td>
+</tr>
+<tr>
+<td align="center">007197</td>
+<td align="center">富国中债1-5年农发行A</td>
+<td align="center">债券指数</td>
+<td align="center">2019-04-30</td>
+<td align="center">2020-10-26</td>
+<td align="center">1年又180天</td>
+<td align="center">4.56%</td>
+<td align="center">7.90%</td>
+<td align="center">1233/1669</td>
+</tr>
+<tr>
+<td align="center">007198</td>
+<td align="center">富国中债1-5年农发行C</td>
+<td align="center">债券指数</td>
+<td align="center">2019-04-30</td>
+<td align="center">2020-10-26</td>
+<td align="center">1年又180天</td>
+<td align="center">4.23%</td>
+<td align="center">7.90%</td>
+<td align="center">1364/1669</td>
+</tr>
+<tr>
+<td align="center">005920</td>
+<td align="center">富国颐利纯债债券</td>
+<td align="center">债券型</td>
+<td align="center">2019-04-01</td>
+<td align="center">至今</td>
+<td align="center">2年又41天</td>
+<td align="center">5.34%</td>
+<td align="center">9.46%</td>
+<td align="center">1307/1548</td>
+</tr>
+<tr>
+<td align="center">006134</td>
+<td align="center">富国金融债债券型</td>
+<td align="center">债券型</td>
+<td align="center">2019-04-01</td>
+<td align="center">至今</td>
+<td align="center">2年又41天</td>
+<td align="center">6.37%</td>
+<td align="center">9.46%</td>
+<td align="center">1084/1548</td>
+</tr>
+<tr>
+<td align="center">000810</td>
+<td align="center">富国收益增强债券A</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">36.83%</td>
+<td align="center">10.16%</td>
+<td align="center">24/1529</td>
+</tr>
+<tr>
+<td align="center">000812</td>
+<td align="center">富国收益增强债券C</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">35.66%</td>
+<td align="center">10.16%</td>
+<td align="center">27/1529</td>
+</tr>
+<tr>
+<td align="center">002782</td>
+<td align="center">富国祥利定开债发起式</td>
+<td align="center">定开债券</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">20.01%</td>
+<td align="center">7.84%</td>
+<td align="center">1/196</td>
+</tr>
+<tr>
+<td align="center">003877</td>
+<td align="center">富国久利稳健配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">17.22%</td>
+<td align="center">62.21%</td>
+<td align="center">2493/2734</td>
+</tr>
+<tr>
+<td align="center">003878</td>
+<td align="center">富国久利稳健配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">16.23%</td>
+<td align="center">62.21%</td>
+<td align="center">2521/2734</td>
+</tr>
+<tr>
+<td align="center">006750</td>
+<td align="center">富国德利纯债定开债</td>
+<td align="center">定开债券</td>
+<td align="center">2019-03-19</td>
+<td align="center">2021-04-21</td>
+<td align="center">2年又34天</td>
+<td align="center">5.87%</td>
+<td align="center">7.44%</td>
+<td align="center">245/298</td>
+</tr>
+<tr>
+<td align="center">100035</td>
+<td align="center">富国优化增强债券A/B</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">16.00%</td>
+<td align="center">10.16%</td>
+<td align="center">199/1529</td>
+</tr>
+<tr>
+<td align="center">100037</td>
+<td align="center">富国优化增强债券C</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">15.02%</td>
+<td align="center">10.16%</td>
+<td align="center">227/1529</td>
+</tr>
+<tr>
+<td align="center">100051</td>
+<td align="center">富国可转债A</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">37.76%</td>
+<td align="center">10.16%</td>
+<td align="center">20/1529</td>
+</tr>
+<tr>
+<td align="center">161010</td>
+<td align="center">富国天丰强化债券(LOF)</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-19</td>
+<td align="center">至今</td>
+<td align="center">2年又54天</td>
+<td align="center">20.44%</td>
+<td align="center">10.16%</td>
+<td align="center">117/1529</td>
+</tr>
+<tr>
+<td align="center">005493</td>
+<td align="center">鑫元价值精选混合A</td>
+<td align="center">混合型</td>
+<td align="center">2018-01-23</td>
+<td align="center">2018-02-09</td>
+<td align="center">17天</td>
+<td align="center">0.11%</td>
+<td align="center">-7.22%</td>
+<td align="center">69/2618</td>
+</tr>
+<tr>
+<td align="center">005494</td>
+<td align="center">鑫元价值精选混合C</td>
+<td align="center">混合型</td>
+<td align="center">2018-01-23</td>
+<td align="center">2018-02-09</td>
+<td align="center">17天</td>
+<td align="center">0.08%</td>
+<td align="center">-7.22%</td>
+<td align="center">84/2618</td>
+</tr>
+<tr>
+<td align="center">004944</td>
+<td align="center">鑫元鑫趋势灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2017-08-24</td>
+<td align="center">2018-02-09</td>
+<td align="center">169天</td>
+<td align="center">2.30%</td>
+<td align="center">0.29%</td>
+<td align="center">877/2408</td>
+</tr>
+<tr>
+<td align="center">004948</td>
+<td align="center">鑫元鑫趋势灵活配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2017-08-24</td>
+<td align="center">2018-02-09</td>
+<td align="center">169天</td>
+<td align="center">1.85%</td>
+<td align="center">0.29%</td>
+<td align="center">992/2408</td>
+</tr>
+<tr>
+<td align="center">002632</td>
+<td align="center">鑫元双债增强债券A</td>
+<td align="center">债券型</td>
+<td align="center">2016-04-21</td>
+<td align="center">2018-02-09</td>
+<td align="center">1年又294天</td>
+<td align="center">2.26%</td>
+<td align="center">2.46%</td>
+<td align="center">389/657</td>
+</tr>
+<tr>
+<td align="center">002633</td>
+<td align="center">鑫元双债增强债券C</td>
+<td align="center">债券型</td>
+<td align="center">2016-04-21</td>
+<td align="center">2018-02-09</td>
+<td align="center">1年又294天</td>
+<td align="center">1.65%</td>
+<td align="center">2.46%</td>
+<td align="center">435/657</td>
+</tr>
+<tr>
+<td align="center">001601</td>
+<td align="center">鑫元鑫新收益灵活配置混合A</td>
+<td align="center">混合型</td>
+<td align="center">2015-07-15</td>
+<td align="center">2018-02-09</td>
+<td align="center">2年又210天</td>
+<td align="center">2.33%</td>
+<td align="center">5.34%</td>
+<td align="center">631/1063</td>
+</tr>
+<tr>
+<td align="center">001602</td>
+<td align="center">鑫元鑫新收益灵活配置混合C</td>
+<td align="center">混合型</td>
+<td align="center">2015-07-15</td>
+<td align="center">2018-02-09</td>
+<td align="center">2年又210天</td>
+<td align="center">0.94%</td>
+<td align="center">5.34%</td>
+<td align="center">660/1063</td>
+</tr>
+<tr>
+<td align="center">001526</td>
+<td align="center">鑫元安鑫宝货币A</td>
+<td align="center">货币型</td>
+<td align="center">2015-06-26</td>
+<td align="center">2018-02-09</td>
+<td align="center">2年又229天</td>
+<td align="center">3.40%</td>
+<td align="center">5.55%</td>
+<td align="center">422/423</td>
+</tr>
+<tr>
+<td align="center">001527</td>
+<td align="center">鑫元安鑫宝货币B</td>
+<td align="center">货币型</td>
+<td align="center">2015-06-26</td>
+<td align="center">2018-02-09</td>
+<td align="center">2年又229天</td>
+<td align="center">8.31%</td>
+<td align="center">8.62%</td>
+<td align="center">224/331</td>
+</tr>
+<tr>
+<td align="center">000909</td>
+<td align="center">鑫元合丰分级债券</td>
+<td align="center">债券型</td>
+<td align="center">2014-12-16</td>
+<td align="center">2016-12-26</td>
+<td align="center">2年又11天</td>
+<td align="center">11.68%</td>
+<td align="center">13.72%</td>
+<td align="center">349/537</td>
+</tr>
+<tr>
+<td align="center">000910</td>
+<td align="center">鑫元合丰纯债C</td>
+<td align="center">债券型</td>
+<td align="center">2014-12-16</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又56天</td>
+<td align="center">12.09%</td>
+<td align="center">15.45%</td>
+<td align="center">366/520</td>
+</tr>
+<tr>
+<td align="center">000911</td>
+<td align="center">鑫元合丰纯债A</td>
+<td align="center">债券型</td>
+<td align="center">2014-12-16</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又56天</td>
+<td align="center">21.08%</td>
+<td align="center">15.45%</td>
+<td align="center">123/520</td>
+</tr>
+<tr>
+<td align="center">000896</td>
+<td align="center">鑫元聚鑫收益增强债A</td>
+<td align="center">债券型</td>
+<td align="center">2014-12-02</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又70天</td>
+<td align="center">-2.70%</td>
+<td align="center">15.16%</td>
+<td align="center">495/519</td>
+</tr>
+<tr>
+<td align="center">000897</td>
+<td align="center">鑫元聚鑫收益增强债C</td>
+<td align="center">债券型</td>
+<td align="center">2014-12-02</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又70天</td>
+<td align="center">-3.94%</td>
+<td align="center">15.16%</td>
+<td align="center">497/519</td>
+</tr>
+<tr>
+<td align="center">000814</td>
+<td align="center">鑫元合享纯债C</td>
+<td align="center">债券型</td>
+<td align="center">2014-10-15</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又118天</td>
+<td align="center">16.23%</td>
+<td align="center">22.35%</td>
+<td align="center">339/509</td>
+</tr>
+<tr>
+<td align="center">000815</td>
+<td align="center">鑫元合享纯债A</td>
+<td align="center">债券型</td>
+<td align="center">2014-10-15</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又118天</td>
+<td align="center">10.17%</td>
+<td align="center">22.35%</td>
+<td align="center">441/509</td>
+</tr>
+<tr>
+<td align="center">000694</td>
+<td align="center">鑫元鸿利债券</td>
+<td align="center">债券型</td>
+<td align="center">2014-06-26</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又229天</td>
+<td align="center">18.83%</td>
+<td align="center">28.28%</td>
+<td align="center">354/485</td>
+</tr>
+<tr>
+<td align="center">000655</td>
+<td align="center">鑫元稳利债券</td>
+<td align="center">债券型</td>
+<td align="center">2014-06-12</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又243天</td>
+<td align="center">22.04%</td>
+<td align="center">29.04%</td>
+<td align="center">309/479</td>
+</tr>
+<tr>
+<td align="center">000578</td>
+<td align="center">鑫元恒鑫收益增强债券型发起式A</td>
+<td align="center">债券型</td>
+<td align="center">2014-04-17</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又299天</td>
+<td align="center">-1.26%</td>
+<td align="center">31.90%</td>
+<td align="center">461/472</td>
+</tr>
+<tr>
+<td align="center">000579</td>
+<td align="center">鑫元恒鑫收益增强债券型发起式C</td>
+<td align="center">债券型</td>
+<td align="center">2014-04-17</td>
+<td align="center">2018-02-09</td>
+<td align="center">3年又299天</td>
+<td align="center">-2.62%</td>
+<td align="center">31.90%</td>
+<td align="center">462/472</td>
+</tr>
+<tr>
+<td align="center">000483</td>
+<td align="center">鑫元货币A</td>
+<td align="center">货币型</td>
+<td align="center">2013-12-30</td>
+<td align="center">2016-03-02</td>
+<td align="center">2年又63天</td>
+<td align="center">9.10%</td>
+<td align="center">8.47%</td>
+<td align="center">84/167</td>
+</tr>
+<tr>
+<td align="center">000484</td>
+<td align="center">鑫元货币B</td>
+<td align="center">货币型</td>
+<td align="center">2013-12-30</td>
+<td align="center">2016-03-02</td>
+<td align="center">2年又63天</td>
+<td align="center">9.67%</td>
+<td align="center">8.47%</td>
+<td align="center">39/167</td>
+</tr>
+</tbody></table>
+<h2 id="申万菱信可转债债券"><a href="#申万菱信可转债债券" class="headerlink" title="申万菱信可转债债券"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/310518.html">申万菱信可转债债券</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中高风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0.33% (一般)</td>
+<td align="center">-5.40% (不佳)</td>
+<td align="center">13.39% (优秀)</td>
+<td align="center">5.87% (优秀)</td>
+<td align="center">18.94% (优秀)</td>
+<td align="center">43.84% (优秀)</td>
+<td align="center">41.27% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 2                                           </li>
+<li><strong>基金规模</strong> ：  3.51亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中高  |  <em>本类别</em> - 高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_310518.html">范磊</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">009543</td>
+<td align="center">申万菱信安泰富利三年定开A</td>
+<td align="center">定开债券</td>
+<td align="center">2020-07-29</td>
+<td align="center">至今</td>
+<td align="center">286天</td>
+<td align="center">2.39%</td>
+<td align="center">2.23%</td>
+<td align="center">183/398</td>
+</tr>
+<tr>
+<td align="center">009544</td>
+<td align="center">申万菱信安泰富利三年定开C</td>
+<td align="center">定开债券</td>
+<td align="center">2020-07-29</td>
+<td align="center">至今</td>
+<td align="center">286天</td>
+<td align="center">2.05%</td>
+<td align="center">2.23%</td>
+<td align="center">297/398</td>
+</tr>
+<tr>
+<td align="center">008991</td>
+<td align="center">申万菱信安鑫慧选混合A</td>
+<td align="center">混合型</td>
+<td align="center">2020-04-10</td>
+<td align="center">至今</td>
+<td align="center">1年又31天</td>
+<td align="center">24.63%</td>
+<td align="center">39.90%</td>
+<td align="center">2231/3327</td>
+</tr>
+<tr>
+<td align="center">008992</td>
+<td align="center">申万菱信安鑫慧选混合C</td>
+<td align="center">混合型</td>
+<td align="center">2020-04-10</td>
+<td align="center">至今</td>
+<td align="center">1年又31天</td>
+<td align="center">24.60%</td>
+<td align="center">39.90%</td>
+<td align="center">2234/3327</td>
+</tr>
+<tr>
+<td align="center">310508</td>
+<td align="center">申万菱信稳益宝债券</td>
+<td align="center">债券型</td>
+<td align="center">2019-03-27</td>
+<td align="center">至今</td>
+<td align="center">2年又46天</td>
+<td align="center">17.23%</td>
+<td align="center">10.06%</td>
+<td align="center">182/1541</td>
+</tr>
+<tr>
+<td align="center">003601</td>
+<td align="center">申万菱信安鑫精选混合A</td>
+<td align="center">混合型</td>
+<td align="center">2019-02-20</td>
+<td align="center">至今</td>
+<td align="center">2年又81天</td>
+<td align="center">31.63%</td>
+<td align="center">76.96%</td>
+<td align="center">2081/2701</td>
+</tr>
+<tr>
+<td align="center">003602</td>
+<td align="center">申万菱信安鑫精选混合C</td>
+<td align="center">混合型</td>
+<td align="center">2019-02-20</td>
+<td align="center">至今</td>
+<td align="center">2年又81天</td>
+<td align="center">31.01%</td>
+<td align="center">76.96%</td>
+<td align="center">2105/2701</td>
+</tr>
+<tr>
+<td align="center">310518</td>
+<td align="center">申万菱信可转债债券</td>
+<td align="center">债券型</td>
+<td align="center">2019-02-20</td>
+<td align="center">至今</td>
+<td align="center">2年又81天</td>
+<td align="center">49.63%</td>
+<td align="center">11.40%</td>
+<td align="center">13/1468</td>
+</tr>
+<tr>
+<td align="center">004978</td>
+<td align="center">富国聚利三个月定开债</td>
+<td align="center">定开债券</td>
+<td align="center">2017-08-15</td>
+<td align="center">2018-10-17</td>
+<td align="center">1年又63天</td>
+<td align="center">7.65%</td>
+<td align="center">4.57%</td>
+<td align="center">6/168</td>
+</tr>
+<tr>
+<td align="center">161019</td>
+<td align="center">富国新天锋债券(LOF)</td>
+<td align="center">债券型</td>
+<td align="center">2017-03-24</td>
+<td align="center">2018-10-17</td>
+<td align="center">1年又207天</td>
+<td align="center">2.42%</td>
+<td align="center">4.28%</td>
+<td align="center">801/1081</td>
+</tr>
+<tr>
+<td align="center">100066</td>
+<td align="center">富国纯债债券发起A/B</td>
+<td align="center">债券型</td>
+<td align="center">2016-11-08</td>
+<td align="center">2018-07-04</td>
+<td align="center">1年又238天</td>
+<td align="center">3.03%</td>
+<td align="center">0.76%</td>
+<td align="center">282/807</td>
+</tr>
+<tr>
+<td align="center">100068</td>
+<td align="center">富国纯债债券发起C</td>
+<td align="center">债券型</td>
+<td align="center">2016-11-08</td>
+<td align="center">2018-07-04</td>
+<td align="center">1年又238天</td>
+<td align="center">2.06%</td>
+<td align="center">0.76%</td>
+<td align="center">376/807</td>
+</tr>
+<tr>
+<td align="center">100035</td>
+<td align="center">富国优化增强债券A/B</td>
+<td align="center">债券型</td>
+<td align="center">2016-08-19</td>
+<td align="center">2018-10-17</td>
+<td align="center">2年又59天</td>
+<td align="center">1.48%</td>
+<td align="center">2.18%</td>
+<td align="center">478/733</td>
+</tr>
+<tr>
+<td align="center">100037</td>
+<td align="center">富国优化增强债券C</td>
+<td align="center">债券型</td>
+<td align="center">2016-08-19</td>
+<td align="center">2018-10-17</td>
+<td align="center">2年又59天</td>
+<td align="center">0.60%</td>
+<td align="center">2.18%</td>
+<td align="center">508/733</td>
+</tr>
+<tr>
+<td align="center">100051</td>
+<td align="center">富国可转债A</td>
+<td align="center">债券型</td>
+<td align="center">2016-08-19</td>
+<td align="center">2018-10-17</td>
+<td align="center">2年又59天</td>
+<td align="center">-13.41%</td>
+<td align="center">2.18%</td>
+<td align="center">706/733</td>
+</tr>
+</tbody></table>
+<h2 id="富国兴利增强债券"><a href="#富国兴利增强债券" class="headerlink" title="富国兴利增强债券"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/005121.html">富国兴利增强债券</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">2.09% (优秀)</td>
+<td align="center">-0.96% (不佳)</td>
+<td align="center">7.91% (优秀)</td>
+<td align="center">3.10% (优秀)</td>
+<td align="center">20.99% (优秀)</td>
+<td align="center">33.05% (优秀)</td>
+<td align="center">36.13% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 0                                           </li>
+<li><strong>基金规模</strong> ：  1.32亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_005121.html">陈斯扬</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">005121</td>
+<td align="center">富国兴利增强债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-04-02</td>
+<td align="center">至今</td>
+<td align="center">3年又40天</td>
+<td align="center">37.08%</td>
+<td align="center">16.56%</td>
+<td align="center">47/1141</td>
+</tr>
+<tr>
+<td align="center">004902</td>
+<td align="center">富国丰利增强债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-03-19</td>
+<td align="center">至今</td>
+<td align="center">3年又54天</td>
+<td align="center">18.67%</td>
+<td align="center">16.81%</td>
+<td align="center">319/1136</td>
+</tr>
+<tr>
+<td align="center">005078</td>
+<td align="center">富国宝利增强债券</td>
+<td align="center">债券型</td>
+<td align="center">2018-03-19</td>
+<td align="center">至今</td>
+<td align="center">3年又54天</td>
+<td align="center">23.39%</td>
+<td align="center">16.81%</td>
+<td align="center">170/1136</td>
+</tr>
+<tr>
+<td align="center">511310</td>
+<td align="center">富国中证10年期国债ETF</td>
+<td align="center">ETF-场内</td>
+<td align="center">2018-03-19</td>
+<td align="center">至今</td>
+<td align="center">3年又54天</td>
+<td align="center">12.26%</td>
+<td align="center">16.81%</td>
+<td align="center">830/1136</td>
+</tr>
+</tbody></table>
+<h2 id="华商稳定增利债券A"><a href="#华商稳定增利债券A" class="headerlink" title="华商稳定增利债券A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/630009.html">华商稳定增利债券A</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">3.52% (优秀)</td>
+<td align="center">1.67% (优秀)</td>
+<td align="center">11.35% (优秀)</td>
+<td align="center">7.10% (优秀)</td>
+<td align="center">23.81% (优秀)</td>
+<td align="center">37.94% (优秀)</td>
+<td align="center">44.27% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 5                                           </li>
+<li><strong>基金规模</strong> ：  26.58亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_630009.html">张永志</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">007683</td>
+<td align="center">华商转债精选债券A</td>
+<td align="center">债券型</td>
+<td align="center">2020-09-29</td>
+<td align="center">至今</td>
+<td align="center">224天</td>
+<td align="center">1.29%</td>
+<td align="center">2.53%</td>
+<td align="center">2078/2445</td>
+</tr>
+<tr>
+<td align="center">007684</td>
+<td align="center">华商转债精选债券C</td>
+<td align="center">债券型</td>
+<td align="center">2020-09-29</td>
+<td align="center">至今</td>
+<td align="center">224天</td>
+<td align="center">1.11%</td>
+<td align="center">2.53%</td>
+<td align="center">2130/2445</td>
+</tr>
+<tr>
+<td align="center">007210</td>
+<td align="center">华商瑞丰短债C</td>
+<td align="center">债券型</td>
+<td align="center">2019-05-24</td>
+<td align="center">2019-08-23</td>
+<td align="center">91天</td>
+<td align="center">0.67%</td>
+<td align="center">1.91%</td>
+<td align="center">1654/1756</td>
+</tr>
+<tr>
+<td align="center">000463</td>
+<td align="center">华商双债丰利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">2020-03-16</td>
+<td align="center">1年又233天</td>
+<td align="center">-1.27%</td>
+<td align="center">10.22%</td>
+<td align="center">1257/1273</td>
+</tr>
+<tr>
+<td align="center">000481</td>
+<td align="center">华商双债丰利债券C</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">2020-03-16</td>
+<td align="center">1年又233天</td>
+<td align="center">-1.98%</td>
+<td align="center">10.22%</td>
+<td align="center">1260/1273</td>
+</tr>
+<tr>
+<td align="center">001448</td>
+<td align="center">华商双翼平衡混合</td>
+<td align="center">混合型</td>
+<td align="center">2018-07-27</td>
+<td align="center">2021-04-26</td>
+<td align="center">2年又274天</td>
+<td align="center">12.16%</td>
+<td align="center">69.86%</td>
+<td align="center">2512/2617</td>
+</tr>
+<tr>
+<td align="center">630003</td>
+<td align="center">华商收益增强债券A</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">至今</td>
+<td align="center">2年又289天</td>
+<td align="center">6.17%</td>
+<td align="center">15.65%</td>
+<td align="center">1162/1233</td>
+</tr>
+<tr>
+<td align="center">630103</td>
+<td align="center">华商收益增强债券B</td>
+<td align="center">债券型</td>
+<td align="center">2018-07-27</td>
+<td align="center">至今</td>
+<td align="center">2年又289天</td>
+<td align="center">5.01%</td>
+<td align="center">15.65%</td>
+<td align="center">1184/1233</td>
+</tr>
+<tr>
+<td align="center">005273</td>
+<td align="center">华商可转债债券A</td>
+<td align="center">债券型</td>
+<td align="center">2017-12-22</td>
+<td align="center">至今</td>
+<td align="center">3年又141天</td>
+<td align="center">53.16%</td>
+<td align="center">17.98%</td>
+<td align="center">8/1133</td>
+</tr>
+<tr>
+<td align="center">005284</td>
+<td align="center">华商可转债债券C</td>
+<td align="center">债券型</td>
+<td align="center">2017-12-22</td>
+<td align="center">至今</td>
+<td align="center">3年又141天</td>
+<td align="center">51.78%</td>
+<td align="center">17.98%</td>
+<td align="center">10/1133</td>
+</tr>
+<tr>
+<td align="center">003403</td>
+<td align="center">华商瑞丰短债A</td>
+<td align="center">债券型</td>
+<td align="center">2017-03-01</td>
+<td align="center">2019-08-23</td>
+<td align="center">2年又175天</td>
+<td align="center">2.61%</td>
+<td align="center">10.39%</td>
+<td align="center">899/982</td>
+</tr>
+<tr>
+<td align="center">002924</td>
+<td align="center">华商瑞鑫定开债</td>
+<td align="center">定开债券</td>
+<td align="center">2016-08-24</td>
+<td align="center">至今</td>
+<td align="center">4年又261天</td>
+<td align="center">52.00%</td>
+<td align="center">19.07%</td>
+<td align="center">1/82</td>
+</tr>
+<tr>
+<td align="center">630009</td>
+<td align="center">华商稳定增利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2011-03-15</td>
+<td align="center">至今</td>
+<td align="center">10年又60天</td>
+<td align="center">129.22%</td>
+<td align="center">76.32%</td>
+<td align="center">9/149</td>
+</tr>
+<tr>
+<td align="center">630109</td>
+<td align="center">华商稳定增利债券C</td>
+<td align="center">债券型</td>
+<td align="center">2011-03-15</td>
+<td align="center">至今</td>
+<td align="center">10年又60天</td>
+<td align="center">119.23%</td>
+<td align="center">76.32%</td>
+<td align="center">15/149</td>
+</tr>
+<tr>
+<td align="center">630007</td>
+<td align="center">华商稳健双利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2010-08-09</td>
+<td align="center">至今</td>
+<td align="center">10年又278天</td>
+<td align="center">93.14%</td>
+<td align="center">77.30%</td>
+<td align="center">25/121</td>
+</tr>
+<tr>
+<td align="center">630107</td>
+<td align="center">华商稳健双利债券B</td>
+<td align="center">债券型</td>
+<td align="center">2010-08-09</td>
+<td align="center">至今</td>
+<td align="center">10年又278天</td>
+<td align="center">84.34%</td>
+<td align="center">77.30%</td>
+<td align="center">39/121</td>
+</tr>
+</tbody></table>
+<h2 id="华商信用增强债券A"><a href="#华商信用增强债券A" class="headerlink" title="华商信用增强债券A"></a><a target="_blank" rel="noopener" href="http://fund.eastmoney.com/001751.html">华商信用增强债券A</a></h2><ul>
+<li><strong>基金类型</strong> ： 债券型  |  中风险</li>
+<li><strong>基金排名</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">1个月</th>
+<th align="center">3个月</th>
+<th align="center">6个月</th>
+<th align="center">今年来</th>
+<th align="center">1  年</th>
+<th align="center">2  年</th>
+<th align="center">3  年</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">3.85% (优秀)</td>
+<td align="center">3.19% (优秀)</td>
+<td align="center">14.92% (优秀)</td>
+<td align="center">6.19% (优秀)</td>
+<td align="center">24.81% (优秀)</td>
+<td align="center">30.72% (优秀)</td>
+<td align="center">28.78% (优秀)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>基金评级</strong> ： 1                                           </li>
+<li><strong>基金规模</strong> ：  0.16亿元                                                    </li>
+<li><strong>风险等级</strong> ：  <em>全部类别</em> - 中  |  <em>本类别</em> - 中高</li>
+<li><strong>基金经理</strong> ：  <a target="_blank" rel="noopener" href="http://fundf10.eastmoney.com/jjjl_001751.html">厉骞</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">基金代码</th>
+<th align="center">基金名称</th>
+<th align="center">基金类型</th>
+<th align="center">起始时间</th>
+<th align="center">截止时间</th>
+<th align="center">管理时长</th>
+<th align="center">任职回报</th>
+<th align="center">同类平均</th>
+<th align="center">排名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">001751</td>
+<td align="center">华商信用增强债券A</td>
+<td align="center">债券型</td>
+<td align="center">2020-07-16</td>
+<td align="center">至今</td>
+<td align="center">299天</td>
+<td align="center">22.11%</td>
+<td align="center">3.17%</td>
+<td align="center">13/2313</td>
+</tr>
+<tr>
+<td align="center">001752</td>
+<td align="center">华商信用增强债券C</td>
+<td align="center">债券型</td>
+<td align="center">2020-07-16</td>
+<td align="center">至今</td>
+<td align="center">299天</td>
+<td align="center">21.67%</td>
+<td align="center">3.17%</td>
+<td align="center">14/2313</td>
+</tr>
+<tr>
+<td align="center">000463</td>
+<td align="center">华商双债丰利债券A</td>
+<td align="center">债券型</td>
+<td align="center">2020-03-10</td>
+<td align="center">至今</td>
+<td align="center">1年又62天</td>
+<td align="center">-26.11%</td>
+<td align="center">3.36%</td>
+<td align="center">2046/2047</td>
+</tr>
+<tr>
+<td align="center">000481</td>
+<td align="center">华商双债丰利债券C</td>
+<td align="center">债券型</td>
+<td align="center">2020-03-10</td>
+<td align="center">至今</td>
+<td align="center">1年又62天</td>
+<td align="center">-26.45%</td>
+<td align="center">3.36%</td>
+<td align="center">2047/2047</td>
+</tr>
+<tr>
+<td align="center">003092</td>
+<td align="center">华商丰利增强定开债A</td>
+<td align="center">定开债券</td>
+<td align="center">2019-12-25</td>
+<td align="center">至今</td>
+<td align="center">1年又138天</td>
+<td align="center">39.22%</td>
+<td align="center">4.54%</td>
+<td align="center">1/740</td>
+</tr>
+<tr>
+<td align="center">003093</td>
+<td align="center">华商丰利增强定开债C</td>
+<td align="center">定开债券</td>
+<td align="center">2019-12-25</td>
+<td align="center">至今</td>
+<td align="center">1年又138天</td>
+<td align="center">38.43%</td>
+<td align="center">4.54%</td>
+<td align="center">2/740</td>
+</tr>
+</tbody></table>
+</article><!-- lincense--><div class="license-wrapper"><p> <span>Author:  </span><a href="http://quantum1991.com">Quantum</a></p><p> <span>Link:  </span><a href="http://quantum1991.com/2021/05/11/2021-05-11/">http://quantum1991.com/2021/05/11/2021-05-11/</a></p><p> <span>Copyright:  </span><span>All articles in this blog are licensed under <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/3.0">CC BY-NC-SA 3.0</a> unless stating additionally.</span></p></div><div class="post-paginator"><a class="nextSlogan" href="/2021/04/28/2021-04-28/" title="2021-04-28基金筛选报告"><span>NextPost ></span><br><span class="nextTitle">2021-04-28基金筛选报告</span></a><div class="clear"></div></div><div id="comment"></div></section></article><footer id="cxo-footer-outer"><div id="cxo-footer-inner"><p class="footer-container"><span>Site by </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span> | theme </span><a target="_blank" rel="noopener" href="https://github.com/Longlongyu/hexo-theme-Cxo"><span>Cxo</span></a></p><i class="fa fa-user"> </i><span id="busuanzi_value_site_uv"></span><span> | </span><i class="fa fa-eye"> </i><span id="busuanzi_value_site_pv"></span></div></footer><!-- catelog--><div class="toc-wrapper" style="top: 70vh;"><div class="toc-catalog"><i class="fa fa-list"> </i><span>CATALOG</span></div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%A8%E9%83%A8%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">全部类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%BF%E5%8F%91%E5%A4%9A%E5%9B%A0%E5%AD%90%E6%B7%B7%E5%90%88"><span class="toc-number">1.1.</span> <span class="toc-text">广发多因子混合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%87%E4%B8%B0%E6%99%8B%E4%BF%A1%E4%BD%8E%E7%A2%B3%E5%85%88%E9%94%8B%E8%82%A1%E7%A5%A8"><span class="toc-number">1.2.</span> <span class="toc-text">汇丰晋信低碳先锋股票</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E5%A4%8F%E8%83%BD%E6%BA%90%E9%9D%A9%E6%96%B0%E8%82%A1%E7%A5%A8"><span class="toc-number">1.3.</span> <span class="toc-text">华夏能源革新股票</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#QDII"><span class="toc-number">2.</span> <span class="toc-text">QDII</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%97%E6%96%B9%E9%A6%99%E6%B8%AF%E4%BC%98%E9%80%89%E8%82%A1%E7%A5%A8"><span class="toc-number">2.1.</span> <span class="toc-text">南方香港优选股票</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%97%E6%96%B9%E9%A6%99%E6%B8%AF%E6%88%90%E9%95%BF"><span class="toc-number">2.2.</span> <span class="toc-text">南方香港成长</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BD%E5%AF%8C%E4%BA%9A%E6%B4%B2%E6%9C%BA%E4%BC%9A%E8%82%A1%E7%A5%A8"><span class="toc-number">2.3.</span> <span class="toc-text">国富亚洲机会股票</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">混合型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%BF%E5%8F%91%E5%A4%9A%E5%9B%A0%E5%AD%90%E6%B7%B7%E5%90%88-1"><span class="toc-number">3.1.</span> <span class="toc-text">广发多因子混合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%88%90%E7%9D%BF%E6%99%AF%E7%81%B5%E6%B4%BB%E9%85%8D%E7%BD%AE%E6%B7%B7%E5%90%88A"><span class="toc-number">3.2.</span> <span class="toc-text">大成睿景灵活配置混合A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%91%E9%B9%B0%E6%94%B9%E9%9D%A9%E7%BA%A2%E5%88%A9%E6%B7%B7%E5%90%88"><span class="toc-number">3.3.</span> <span class="toc-text">金鹰改革红利混合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E8%AF%9A%E6%96%B0%E5%85%B4%E4%BA%A7%E4%B8%9A%E6%B7%B7%E5%90%88"><span class="toc-number">3.4.</span> <span class="toc-text">信诚新兴产业混合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%88%90%E6%96%B0%E9%94%90%E4%BA%A7%E4%B8%9A%E6%B7%B7%E5%90%88"><span class="toc-number">3.5.</span> <span class="toc-text">大成新锐产业混合</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%82%A1%E7%A5%A8%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">股票型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E5%A4%8F%E8%83%BD%E6%BA%90%E9%9D%A9%E6%96%B0%E8%82%A1%E7%A5%A8-1"><span class="toc-number">4.1.</span> <span class="toc-text">华夏能源革新股票</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%87%E4%B8%B0%E6%99%8B%E4%BF%A1%E6%99%BA%E9%80%A0%E5%85%88%E9%94%8B%E8%82%A1%E7%A5%A8C"><span class="toc-number">4.2.</span> <span class="toc-text">汇丰晋信智造先锋股票C</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E9%87%91%E5%90%88%E4%BF%A1%E8%B5%84%E6%BA%90%E8%82%A1%E7%A5%A8%E5%8F%91%E8%B5%B7%E5%BC%8FA"><span class="toc-number">4.3.</span> <span class="toc-text">创金合信资源股票发起式A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%87%E4%B8%B0%E6%99%8B%E4%BF%A1%E4%BD%8E%E7%A2%B3%E5%85%88%E9%94%8B%E8%82%A1%E7%A5%A8-1"><span class="toc-number">4.4.</span> <span class="toc-text">汇丰晋信低碳先锋股票</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%87%E4%B8%B0%E6%99%8B%E4%BF%A1%E6%99%BA%E9%80%A0%E5%85%88%E9%94%8B%E8%82%A1%E7%A5%A8A"><span class="toc-number">4.5.</span> <span class="toc-text">汇丰晋信智造先锋股票A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E9%87%91%E5%90%88%E4%BF%A1%E8%B5%84%E6%BA%90%E8%82%A1%E7%A5%A8%E5%8F%91%E8%B5%B7%E5%BC%8FC"><span class="toc-number">4.6.</span> <span class="toc-text">创金合信资源股票发起式C</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8C%87%E6%95%B0%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">指数型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E8%AF%9A%E4%B8%AD%E8%AF%81800%E6%9C%89%E8%89%B2%E6%8C%87%E6%95%B0"><span class="toc-number">5.1.</span> <span class="toc-text">信诚中证800有色指数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%9B%E5%95%86%E4%B8%AD%E8%AF%81%E7%99%BD%E9%85%92%E6%8C%87%E6%95%B0"><span class="toc-number">5.2.</span> <span class="toc-text">招商中证白酒指数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BD%E6%B3%B0%E5%9B%BD%E8%AF%81%E6%9C%89%E8%89%B2%E9%87%91%E5%B1%9E%E8%A1%8C%E4%B8%9A%E6%8C%87%E6%95%B0"><span class="toc-number">5.3.</span> <span class="toc-text">国泰国证有色金属行业指数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%8C%E5%9B%BD%E4%B8%AD%E8%AF%81%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E6%8C%87%E6%95%B0"><span class="toc-number">5.4.</span> <span class="toc-text">富国中证新能源汽车指数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%B9%8F%E5%8D%8E%E9%85%92A"><span class="toc-number">5.5.</span> <span class="toc-text">鹏华酒A</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%80%BA%E5%88%B8%E5%9E%8B"><span class="toc-number">6.</span> <span class="toc-text">债券型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E5%95%86%E7%A8%B3%E5%AE%9A%E5%A2%9E%E5%88%A9%E5%80%BA%E5%88%B8C"><span class="toc-number">6.1.</span> <span class="toc-text">华商稳定增利债券C</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E5%A4%8F%E5%8F%AF%E8%BD%AC%E5%80%BA%E5%A2%9E%E5%BC%BA%E5%80%BA%E5%88%B8A"><span class="toc-number">6.2.</span> <span class="toc-text">华夏可转债增强债券A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%91%E9%B9%B0%E5%85%83%E4%B8%B0%E5%80%BA%E5%88%B8"><span class="toc-number">6.3.</span> <span class="toc-text">金鹰元丰债券</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%B9%8F%E5%8D%8E%E5%8F%AF%E8%BD%AC%E5%80%BA%E5%80%BA%E5%88%B8A"><span class="toc-number">6.4.</span> <span class="toc-text">鹏华可转债债券A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%8C%E5%9B%BD%E5%8F%AF%E8%BD%AC%E5%80%BAA"><span class="toc-number">6.5.</span> <span class="toc-text">富国可转债A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B3%E4%B8%87%E8%8F%B1%E4%BF%A1%E5%8F%AF%E8%BD%AC%E5%80%BA%E5%80%BA%E5%88%B8"><span class="toc-number">6.6.</span> <span class="toc-text">申万菱信可转债债券</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%8C%E5%9B%BD%E5%85%B4%E5%88%A9%E5%A2%9E%E5%BC%BA%E5%80%BA%E5%88%B8"><span class="toc-number">6.7.</span> <span class="toc-text">富国兴利增强债券</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E5%95%86%E7%A8%B3%E5%AE%9A%E5%A2%9E%E5%88%A9%E5%80%BA%E5%88%B8A"><span class="toc-number">6.8.</span> <span class="toc-text">华商稳定增利债券A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E5%95%86%E4%BF%A1%E7%94%A8%E5%A2%9E%E5%BC%BA%E5%80%BA%E5%88%B8A"><span class="toc-number">6.9.</span> <span class="toc-text">华商信用增强债券A</span></a></li></ol></li></ol></div><!-- top--><i class="fa fa-arrow-up close" id="go-up" aria-hidden="true"></i></body></html>
